@@ -1,0 +1,51 @@
+---
+layout: default
+title: Office Hours
+---
+
+{% include page-header.html %}
+
+<div class="container">
+  <div class="section">
+    <h2 class="section-title">Office Hours</h2>
+    <p>
+      Office hours are drop-in sessions—no appointment needed. Come with questions about
+      lectures, assignments, or your project.
+    </p>
+
+    <table>
+      <tr>
+        <th>Staff</th>
+        <th>Day & Time</th>
+        <th>Location</th>
+      </tr>
+      {% for instructor in site.data.team.instructors %}
+      {% if instructor.office_hours %}
+      <tr>
+        <td>{{ instructor.name }}</td>
+        <td>{{ instructor.office_hours }}</td>
+        <td>{{ instructor.office | default: "TBC" }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      {% for ta in site.data.team.teaching_assistants %}
+      {% if ta.office_hours %}
+      <tr>
+        <td>{{ ta.name }}</td>
+        <td>{{ ta.office_hours }}</td>
+        <td>TBC</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </table>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Getting Help</h2>
+    <ul>
+      <li><b>Discussion Board:</b> Use Canvas for general questions—other students benefit from seeing answers.</li>
+      <li><b>Office Hours:</b> Best for longer discussions or debugging help.</li>
+      <li><b>Email:</b> For private or administrative matters only. Allow 2–3 working days for response.</li>
+    </ul>
+  </div>
+</div>

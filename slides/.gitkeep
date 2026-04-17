@@ -1,0 +1,12 @@
+# Lecture Slides Directory
+
+Place PDF slides in this directory following the naming convention:
+- lecture-01.pdf
+- lecture-02.pdf
+- etc.
+
+Update the schedule.yml file to link to slides:
+
+```yaml
+slides: "/slides/lecture-01.pdf"
+```

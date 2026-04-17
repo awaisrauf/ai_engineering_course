@@ -1,0 +1,785 @@
+/* ============================================
+   ECS8060 AI Engineering - QUB Brand Style
+   Brand Color: #8F0E20
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+/* ============================================
+   NAVIGATION RIBBON
+   ============================================ */
+.ribbon {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #8F0E20;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.ribbon-inner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ribbon-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.ribbon-logo {
+  height: 36px;
+}
+
+.ribbon-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ribbon-brand:hover {
+  text-decoration: none;
+}
+
+.ribbon-brand:hover .ribbon-title {
+  color: #ffd;
+}
+
+.ribbon-nav {
+  display: flex;
+  gap: 3px;
+}
+
+.ribbon-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.ribbon-nav a:hover {
+  background: rgba(255,255,255,0.15);
+  text-decoration: none;
+}
+
+.ribbon-nav a.active {
+  background: rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   HERO BANNER
+   ============================================ */
+.hero-banner {
+  max-width: 1100px;
+  margin: 16px auto 10px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.hero-banner > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  border-radius: 6px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  background: linear-gradient(to right, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 60%, rgba(0,0,0,0.1) 100%);
+}
+
+.hero-spacer {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+
+.hero-course-code {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.hero-course-name {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  opacity: 0.85;
+}
+
+.hero-logo-wrap {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .hero-banner > img {
+    height: 180px;
+  }
+
+  .hero-overlay {
+    padding: 0 20px;
+  }
+
+  .hero-spacer, .hero-logo-wrap {
+    width: 50px;
+  }
+
+  .hero-logo {
+    height: 50px !important;
+    width: 50px !important;
+  }
+
+  .hero-course-code {
+    font-size: 16px;
+  }
+
+  .hero-course-name {
+    font-size: 35px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ============================================
+   PAGE HEADER (Title + Subtitle + Logos)
+   ============================================ */
+.page-header {
+  padding: 35px 0 25px;
+  margin-bottom: 20px;
+}
+
+.page-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header-text {
+  text-align: center;
+  flex: 1;
+}
+
+.header-logo {
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.page-header .subtitle {
+  font-size: 15px;
+  color: #666;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section {
+  padding: 15px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.section:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+.section-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #8F0E20;
+  margin-bottom: 12px;
+}
+
+.section p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* ============================================
+   TEAM SECTION
+   ============================================ */
+.team-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.team-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.team-group-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.team-group-divider {
+  width: 1px;
+  background: #e0e0e0;
+  align-self: stretch;
+  margin: 4px 0;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 40px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-top: 8px;
+}
+
+.team-member .info {
+  font-size: 15px;
+}
+
+.team-member .name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+
+.team-member .name a {
+  color: #222;
+  text-decoration: none;
+}
+
+.team-member .name a:hover {
+  color: #8F0E20;
+  text-decoration: underline;
+}
+
+.team-member .role {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ============================================
+   SPONSORS
+   ============================================ */
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 15px 0;
+}
+
+.sponsor-logo {
+  height: 45px;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+th {
+  background: #f8f8f8;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+/* ============================================
+   SCHEDULE TABLE
+   ============================================ */
+.schedule-table {
+  border-collapse: collapse;
+  font-size: 16px;
+  width: 100%;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 14px 18px;
+}
+
+.schedule-table th {
+  font-size: 15px;
+}
+
+.schedule-table td:first-child {
+  width: 100px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #555;
+}
+
+.schedule-table td:nth-child(2) {
+  width: 55%;
+}
+
+.schedule-table td:nth-child(3) {
+  width: auto;
+}
+
+.schedule-table .topic-cell {
+  font-size: 16px;
+}
+
+.schedule-table .lecture a {
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.schedule-table .lecture a:hover {
+  color: #8F0E20;
+  text-decoration: underline;
+}
+
+.schedule-table .materials {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.schedule-table .materials a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #0066cc;
+}
+
+.schedule-table .materials a:hover {
+  text-decoration: underline;
+}
+
+.schedule-table .deadline {
+  color: #8F0E20;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.schedule-table .event {
+  color: #0066cc;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.schedule-table .readings {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.schedule-table .readings a {
+  color: #0066cc;
+}
+
+.schedule-table .readings a:hover {
+  text-decoration: underline;
+}
+
+/* Section header row */
+.schedule-section-row td {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 18px;
+  border-bottom: none;
+  text-align: center;
+}
+
+.schedule-section-row td { background: #f0f0f0; color: #333; }
+
+/* ============================================
+   ASSIGNMENT LIST
+   ============================================ */
+.assignment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-list li {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.assignment-list .title a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.assignment-list .title a:hover {
+  color: #8F0E20;
+  text-decoration: underline;
+}
+
+.assignment-list .meta {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ============================================
+   NOTES & ASSIGNMENT PAGES
+   ============================================ */
+.page-content {
+  padding: 35px 0;
+}
+
+.page-content h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.page-content .page-meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.page-content h2 {
+  font-size: 19px;
+  color: #8F0E20;
+  margin: 30px 0 12px;
+}
+
+.page-content h3 {
+  font-size: 16px;
+  margin: 22px 0 10px;
+}
+
+.page-content p {
+  margin-bottom: 12px;
+}
+
+.page-content ul, .page-content ol {
+  margin: 12px 0 18px 22px;
+}
+
+.page-content li {
+  margin-bottom: 6px;
+}
+
+.page-content code {
+  background: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.page-content pre {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 18px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #666;
+  font-size: 13px;
+}
+
+.back-link:hover {
+  color: #8F0E20;
+  text-decoration: underline;
+}
+
+/* ============================================
+   MARKDOWN CONTENT (Notes & Assignments)
+   ============================================ */
+.markdown-content {
+  line-height: 1.6;
+}
+
+.markdown-content h2 {
+  font-size: 20px;
+  color: #222;
+  margin: 28px 0 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.markdown-content h3 {
+  font-size: 17px;
+  color: #333;
+  margin: 22px 0 10px;
+}
+
+.markdown-content h4 {
+  font-size: 15px;
+  color: #444;
+  margin: 18px 0 8px;
+}
+
+.markdown-content p {
+  margin-bottom: 14px;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 12px 0 16px 24px;
+}
+
+.markdown-content li {
+  margin-bottom: 6px;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #8F0E20;
+  margin: 16px 0;
+  padding: 10px 16px;
+  background: #fafafa;
+  color: #555;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 16px 0;
+}
+
+.markdown-content table {
+  margin: 16px 0;
+}
+
+.markdown-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 24px 0;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   LISTS (general)
+   ============================================ */
+ul, ol {
+  margin: 8px 0 15px 22px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  margin-top: 50px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .ribbon {
+    height: auto;
+    padding: 10px;
+  }
+
+  .ribbon-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ribbon-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ribbon-nav a {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .page-header h1 {
+    font-size: 18px;
+  }
+
+  .page-header .subtitle {
+    font-size: 13px;
+  }
+
+  .header-logo {
+    height: 45px;
+  }
+
+  .team-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .team-group-divider {
+    width: 100%;
+    height: 1px;
+    align-self: auto;
+    margin: 0;
+  }
+
+  .team-group {
+    padding: 0;
+  }
+
+  .team-grid {
+    gap: 20px 25px;
+  }
+
+  .team-member img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .team-member .name {
+    font-size: 14px;
+  }
+
+  .team-member .role {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

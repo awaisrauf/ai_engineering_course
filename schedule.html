@@ -1,0 +1,66 @@
+---
+layout: default
+title: Schedule
+---
+
+{% include page-header.html %}
+
+<div class="container">
+  <div class="section">
+    <h2 class="section-title">Schedule</h2>
+    <p>
+      This schedule outlines all lectures, assignments, and deadlines for the course.
+      Materials will be posted before each session. The schedule is subject to change.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Topic</th>
+        <th>Readings</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign section_num = 0 %}
+      {% for part in site.data.schedule %}
+      {% assign section_num = section_num | plus: 1 %}
+      <tr class="schedule-section-row section-{{ section_num }}">
+        <td colspan="3">{{ part.section }}</td>
+      </tr>
+      {% for week in part.weeks %}
+      {% for session in week.sessions %}
+      <tr class="section-{{ section_num }}">
+        <td>{{ session.date | date: "%b %d" }}</td>
+        <td class="topic-cell">
+          {% if session.type == 'lecture' %}
+          <span class="lecture"><a href="{{ session.notes | default: '#' }}">Lecture {{ session.num }}: {{ session.title }}</a></span>
+          {% if session.slides or session.notes %}
+          <div class="materials">
+            {% if session.slides %}<a href="{{ session.slides }}">[slides]</a>{% endif %}
+            {% if session.notes %}<a href="{{ session.notes }}">[notes]</a>{% endif %}
+          </div>
+          {% endif %}
+          {% elsif session.type == 'deadline' %}
+          <span class="deadline">{{ session.title }}</span>
+          {% elsif session.type == 'event' %}
+          <span class="event">{{ session.title }}</span>
+          {% endif %}
+        </td>
+        <td class="readings">
+          {% if session.readings %}
+          {% for reading in session.readings %}
+          <a href="{{ reading.url }}">{{ reading.title }}</a>{% unless forloop.last %}<br>{% endunless %}
+          {% endfor %}
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+      {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

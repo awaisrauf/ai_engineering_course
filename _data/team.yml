@@ -1,0 +1,44 @@
+# Course Team
+
+instructors:
+  - name: "Dr. Awais Rauf"
+    role: "Module Coordinator"
+    image: "assets/imgs/personal.jpg"
+    url: "#"
+    office: "ECIT Building"
+    office_hours: "Thursdays 14:00-16:00"
+
+teaching_assistants:
+  - name: "TA Name 1"
+    role: "PhD Researcher"
+    image: "assets/imgs/profile_placeholder.png"
+    office_hours: "Mondays 10:00-12:00"
+
+  - name: "TA Name 2"
+    role: "PhD Researcher"
+    image: "assets/imgs/profile_placeholder.png"
+    office_hours: "Wednesdays 14:00-16:00"
+
+others:
+  - name: "Support 1"
+    role: "Guest Lecturer"
+    image: "assets/imgs/profile_placeholder.png"
+    url: "#"
+
+  - name: "Support 2"
+    role: "Industry Partner"
+    image: "assets/imgs/profile_placeholder.png"
+    url: "#"
+
+sponsors:
+  - name: "AMD"
+    logo: "assets/imgs/amd.png"
+    url: "#"
+
+  - name: "NI Screen"
+    logo: "https://northernirelandscreen.co.uk/wp-content/themes/NI-Screen/images/logos/logo.svg"
+    url: "#"
+
+  - name: "Sponsor 3"
+    logo: "https://via.placeholder.com/150x50?text=Sponsor+3"
+    url: "#"

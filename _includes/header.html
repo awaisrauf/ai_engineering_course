@@ -1,0 +1,16 @@
+<header class="ribbon">
+  <div class="ribbon-inner">
+    <a href="{{ '/' | relative_url }}" class="ribbon-brand">
+      <img src="https://www.qub.ac.uk/schools/media/Media926648smxx-400x400.png" alt="QUB" class="ribbon-logo">
+      <span class="ribbon-title">{{ site.course_code }}: {{ site.course_name }}</span>
+    </a>
+    <nav class="ribbon-nav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/schedule' | relative_url }}" {% if page.url contains 'schedule' %}class="active"{% endif %}>Schedule</a>
+      <a href="{{ '/assignments' | relative_url }}" {% if page.url contains 'assignment' %}class="active"{% endif %}>Assignments</a>
+      <a href="{{ '/project' | relative_url }}" {% if page.url contains 'project' %}class="active"{% endif %}>Project</a>
+      <a href="{{ '/office-hours' | relative_url }}" {% if page.url contains 'office-hours' %}class="active"{% endif %}>Office Hours</a>
+      <a href="{{ '/other' | relative_url }}" {% if page.url contains 'other' %}class="active"{% endif %}>Other</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+# Site settings
+title: "ECS8060: AI Engineering"
+description: "AI Engineering Course at Queen's University Belfast"
+baseurl: ""
+url: ""
+
+# Course info
+course_code: "ECS8060"
+course_name: "AI Engineering"
+university: "Queen's University Belfast"
+semester: "Summer 2026"
+
+# Build settings
+markdown: kramdown
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
