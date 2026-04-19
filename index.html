@@ -22,11 +22,20 @@ title: Home
   <!-- Course Description Section -->
   <div class="section">
     <!-- <h2> </h2> -->
-    Foundation models have broad capabilities, but translating that raw intelligence into
-    reliable, real-world systems requires building the external structure around them.
-    In this course, students gain a practical introduction to building reliable AI systems by extending these models with
-    techniques such as prompting, retrieval, fine-tuning, and scalable deployment.
-  </div>
+     <p>
+        Foundation models have broad capabilities, but turning that raw intelligence into reliable, real-world systems
+        requires building problem-specific structure, adapting model behaviour, and enabling scalable deployment.
+        In this module, students will gain a hands-on experience of building intelligent systems in three parts: <b>building</b> with foundation models (in-context learning, RAG, tools, memory, agents, multimodal systems), <b>adapting</b> them through fine-tuning (instruction tuning, RLHF, distillation, LoRA), and
+        <b>deploying</b> them as production systems (inference optimisation, APIs, observability).
+     </p>
+
+
+    <!-- In this module, students will gain a hands-on introduction to building intelligent systems that solve real-world
+    problems. They will learn to do this by adding external structure (through methods such as in-context learning,
+    contextual retrieval, tool usage, and agentic AI), changing model behavior through fine-tuning (including instruction -->
+    <!-- tuning and preference optimization, with a focus on parameter-efficient methods), and enabling scalable deployment -->
+    <!-- (converting models into scalable APIs).  --> 
+   </div>
 
   <!-- Team Section -->
   <div class="section">
@@ -83,7 +92,7 @@ title: Home
   <div class="section">
     <h2 class="section-title">Sponsors</h2>
     <p>
-      We gratefully acknowledge the support of our sponsors who make this course possible.
+      We gratefully acknowledge the support of our sponsors.
     </p>
     <div class="sponsors-grid">
       {% for sponsor in site.data.team.sponsors %}
@@ -94,17 +103,41 @@ title: Home
   <div class="section">
     <h2 class="section-title">What is this course about</h2>
     <p>
-      Foundation models possess remarkable raw intelligence, but building reliable, real-world systems requires constructing
-      the external structure around them to make that intelligence useful and dependable.
-      This course teaches how to build real-world AI systems by transforming foundation models into reliable,
-      production-ready systems.
-      It starts with fundamentals, model behaviour, evaluation, and selection—then covers practical techniques such
-      as in-context learning, memory, retrieval-augmented generation (RAG), and tool use. Students learn to customise models
-      through fine-tuning, LoRA, and preference optimisation, expand into multimodal systems for vision and audio, and
-      explore
-      AI agents and advanced reasoning patterns. The course concludes with inference optimisation, API design, backend
-      systems, and observability, with a consistent focus on adding structure around raw model capabilities to create
-      scalable, dependable systems, reinforced through assignments, quizzes, and a final project.
+    Foundation models have broad capabilities, but translating that raw intelligence into reliable, real-world systems
+    requires building problem-specific structure, incorporating domain-specific knowledge and behavioral adaptation through
+    efficient fine tuning, and enabling scalable deployment. This module focuses on how to bridge that gap by transforming
+   foundation models into dependable, production-ready intelligent systems.
+
+        <br>
+        <br>
+    
+We will begin with the fundamentals: understanding how foundation models work and how to design evaluations that align with
+real-world tasks. Students will then learn how to improving performance for their problem by adding the right external
+structure, providing task-specific context (in-context learning), retrieving relevant information (RAG), and integrating
+tools to overcome model limitations. Building on this, students will explore how to combine these building blocks into
+agentic systems with memory and skills, enabling models to interact with environments and solve more complex
+problems. Students will also extend these systems beyond text, developing multimodal systems that can see and hear.
+    
+    <br>
+    <br>
+    
+While external structure is powerful, some problems require modifying the model weights. This part of the module focuses on post-training methods for adapting model behaviour and injecting knowledge. Topics we will cover include
+instruction tuning, aligning models with human preferences via reinforcement learning from human feedback (RLHF), and
+learning through interaction with environments using verifiable rewards. We will also explore efficient post-training techniques, such as parameter-efficient fine-tuning (e.g., LoRA), that
+enable meaningful model adaptation without the high computational cost.     
+    <br>
+    <br>
+ The module will conclude with serving and inference optimization, giving students practical exposure to converting their
+  models into scalable production systems.
+    
+    <br>
+    <br>
+    
+This is a project-based module designed to provide hands-on experience. Students will work through the full lifecycle of
+building AI systems, from using foundation models via APIs to serving their own fine-tuned models through
+production-ready APIs. Along the way, they will gain practical exposure to a wide range of foundational models and key
+tools and frameworks, including HuggingFace, Unsloth, LangChain, vLLM, FastAPI, equipping them with the
+essential skills needed to build and deploy real-world AI applications.
     
     </p>
   </div>
@@ -113,12 +146,11 @@ title: Home
   <div class="section">
     <h2 class="section-title">Logistics</h2>
     <ul>
-      <li><b>Lectures:</b> Mondays & Wednesdays, 10:00–12:00</li>
-      <li><b>Location:</b> ECIT Building, Room TBC</li>
-      <li><b>Office Hours:</b> See <a href="/office-hours">Office Hours</a> page</li>
-      <li><b>Contact:</b> Use Canvas discussion board for questions; do not email TAs directly</li>
+      <li><b>Lectures:</b> TBD </li>
+      <li><b>Location:</b> TBD </li>
+      <li><b>Office Hours:</b> See <a href="{{ '/office-hours' | relative_url }}">Office Hours</a> page</li>
+      <li><b>Contact:</b> Use instructor/TA email or canvas to contact.</li>
       <li><b>Submissions:</b> All work submitted via Canvas unless stated otherwise</li>
-      <li><b>Late Policy:</b> 10% penalty per day late; no submissions accepted after 5 days</li>
       <li><b>Collaboration:</b> Discussing ideas is encouraged; code and written work must be your own</li>
       <li><b>AI Tools:</b> Permitted as a productivity aid; you are responsible for all submitted work</li>
     </ul>
@@ -127,10 +159,13 @@ title: Home
   <!-- Grading Section -->
   <div class="section">
     <h2 class="section-title">Grading</h2>
+    This is a project-oriented module, so the majority of the grade will be based on the project. Class attendance, small take-home
+    assignments and in-class quizzes will make up the remaining 30%.
     <ul>
-      <li>Assignments (2 × 20%): 40%</li>
-      <li>Quizzes (3 × 5%): 15%</li>
-      <li>Final Project: 45%</li>
+      <li>Attendance: 5%</li>
+      <li>Assignments (3 × 5%): 15%</li>
+      <li>Quizzes (5 × 2%): 10%</li>
+      <li>Final Project: 70%</li>
     </ul>
   </div>
 
@@ -139,8 +174,8 @@ title: Home
     <h2 class="section-title">Prerequisites</h2>
     <p>
       Students should have programming experience in Python and basic familiarity with machine learning
-      concepts (supervised learning, neural networks). Prior experience with deep learning frameworks
-      (PyTorch) is helpful but not required.
+      concepts (supervised learning, neural networks), linear algebra and probability. Prior experience with deep learning frameworks
+      (PyTorch) is helpful but not required. 
     </p>
   </div>
 

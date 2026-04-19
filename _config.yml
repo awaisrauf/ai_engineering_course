@@ -11,6 +11,7 @@ university: "Queen's University Belfast"
 semester: "Summer 2026"
 
 # Build settings
+theme: null
 markdown: kramdown
 
 # Exclude from build

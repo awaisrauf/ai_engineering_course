@@ -1,6 +1,6 @@
 # Course Schedule
 
-- section: "Part 1: Fundamentals"
+- section: "Part 1: Building with Foundation Models"
   weeks:
     - week: 1
       sessions:
@@ -19,7 +19,7 @@
         - date: "2026-06-03"
           type: lecture
           num: 2
-          title: "Evaluation and Model Selection for Intelligent Systems"
+          title: "Evaluation and Model Selection"
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
           readings:
@@ -30,8 +30,6 @@
           type: deadline
           title: "Quiz 1"
 
-- section: "Part 2: Building with Large Language Models"
-  weeks:
     - week: 2
       sessions:
         - date: "2026-06-08"
@@ -53,24 +51,26 @@
         - date: "2026-06-10"
           type: lecture
           num: 4
-          title: "Memory and Skills"
+          title: "Context Engineering - RAG, Memory, Tools"
           slides: "/slides/lecture-04.pdf"
           notes: "/notes/lecture-04"
           readings:
-            - title: ""
-              url: ""
+            - title: "Retrieval-Augmented Generation"
+              url: "https://arxiv.org/abs/2005.11401"
 
     - week: 3
       sessions:
         - date: "2026-06-15"
           type: lecture
           num: 5
-          title: "Context Engineering - RAG, Tools"
+          title: "Multimodal Foundation Models"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
           readings:
-            - title: "Retrieval-Augmented Generation"
-              url: "https://arxiv.org/abs/2005.11401"
+            - title: "Learning Transferable Visual Models From Natural Language Supervision"
+              url: "https://arxiv.org/abs/2103.00020"
+            - title: "Whisper: Robust Speech Recognition"
+              url: "https://arxiv.org/abs/2212.04356"
 
         - date: "2026-06-17"
           type: deadline
@@ -80,113 +80,107 @@
           type: deadline
           title: "Assignment 1 Due"
 
-- section: "Part 3: Finetuning Large Models"
-  weeks:
     - week: 4
       sessions:
         - date: "2026-06-22"
           type: lecture
           num: 6
-          title: "Fine-tuning LLMs - Fundamentals"
+          title: "Agentic AI"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
           readings:
-            - title: "Training language models to follow instructions"
-              url: "https://arxiv.org/abs/2203.02155"
-
-        - date: "2026-06-22"
-          type: deadline
-          title: "Assignment 2 Released"
+            - title: "ReAct: Reasoning and Acting in Language Models"
+              url: "https://arxiv.org/abs/2210.03629"
 
         - date: "2026-06-24"
           type: lecture
           num: 7
-          title: "Fine-tuning LLMs - LoRA, RLHF, Distillation"
+          title: "Agentic AI"
           slides: "/slides/lecture-07.pdf"
           notes: "/notes/lecture-07"
-          readings:
-            - title: "LoRA: Low-Rank Adaptation"
-              url: "https://arxiv.org/abs/2106.09685"
-            - title: "Direct Preference Optimization"
-              url: "https://arxiv.org/abs/2305.18290"
 
         - date: "2026-06-26"
           type: deadline
           title: "Quiz 3"
 
-    - week: 5
-      sessions:
-        - date: "2026-07-01"
-          type: deadline
-          title: "Project Proposal Due"
-
-        - date: "2026-07-03"
-          type: deadline
-          title: "Assignment 2 Due"
-
-- section: "Part 4: Multimodal AI"
+- section: "Part 2: Adapting Foundation Models"
   weeks:
     - week: 5
       sessions:
-        - date: "2026-07-06"
+        - date: "2026-06-29"
           type: lecture
           num: 8
-          title: "Vision Language Models"
+          title: "When to Fine-tune, Memory Math"
           slides: "/slides/lecture-08.pdf"
           notes: "/notes/lecture-08"
           readings:
-            - title: "Learning Transferable Visual Models From Natural Language Supervision"
-              url: "https://arxiv.org/abs/2103.00020"
+            - title: "Training language models to follow instructions"
+              url: "https://arxiv.org/abs/2203.02155"
+
+        - date: "2026-06-29"
+          type: deadline
+          title: "Assignment 2 Released"
+
+        - date: "2026-07-01"
+          type: lecture
+          num: 9
+          title: "Instruction Tuning and Distillation"
+          slides: "/slides/lecture-09.pdf"
+          notes: "/notes/lecture-09"
+
+    - week: 6
+      sessions:
+        - date: "2026-07-06"
+          type: lecture
+          num: 10
+          title: "Parameter-Efficient Fine-Tuning"
+          slides: "/slides/lecture-10.pdf"
+          notes: "/notes/lecture-10"
+          readings:
+            - title: "LoRA: Low-Rank Adaptation"
+              url: "https://arxiv.org/abs/2106.09685"
 
         - date: "2026-07-08"
           type: lecture
-          num: 9
-          title: "Audio Models"
-          slides: "/slides/lecture-09.pdf"
-          notes: "/notes/lecture-09"
+          num: 11
+          title: "Preference Optimisation with Reinforcement Learning"
+          slides: "/slides/lecture-11.pdf"
+          notes: "/notes/lecture-11"
           readings:
-            - title: "Whisper: Robust Speech Recognition"
-              url: "https://arxiv.org/abs/2212.04356"
+            - title: "Direct Preference Optimization"
+              url: "https://arxiv.org/abs/2305.18290"
 
         - date: "2026-07-10"
           type: deadline
           title: "Quiz 4"
 
-- section: "Part 5: AI Agents"
-  weeks:
     - week: 7
       sessions:
         - date: "2026-07-13"
           type: lecture
-          num: 10
-          title: "LLM Agents - Fundamentals"
-          slides: "/slides/lecture-10.pdf"
-          notes: "/notes/lecture-10"
-          readings:
-            - title: "ReAct: Reasoning and Acting in Language Models"
-              url: "https://arxiv.org/abs/2210.03629"
+          num: 12
+          title: "Reinforcement Learning with Verifiable Rewards"
+          slides: "/slides/lecture-12.pdf"
+          notes: "/notes/lecture-12"
 
         - date: "2026-07-15"
-          type: lecture
-          num: 11
-          title: "LLM Agents - Advanced Patterns"
-          slides: "/slides/lecture-11.pdf"
-          notes: "/notes/lecture-11"
-
-        - date: "2026-07-17"
           type: deadline
-          title: "Quiz 5"
+          title: "Project Proposal Due"
 
-- section: "Part 6: Inference"
+        - date: "2026-07-15"
+          type: deadline
+          title: "Assignment 2 Due"
+
+- section: "Part 3: Deploying Foundation Models"
   weeks:
     - week: 8
       sessions:
         - date: "2026-07-20"
           type: lecture
-          num: 12
+          num: 13
           title: "Inference Optimisation"
-          slides: "/slides/lecture-12.pdf"
-          notes: "/notes/lecture-12"
+          slides: "/slides/lecture-13.pdf"
+          notes: "/notes/lecture-13"
           readings:
             - title: "Efficient Memory Management for LLM Serving with PagedAttention"
               url: "https://arxiv.org/abs/2309.06180"
@@ -197,30 +191,30 @@
 
         - date: "2026-07-22"
           type: lecture
-          num: 13
+          num: 14
           title: "Building Model APIs"
-          slides: "/slides/lecture-13.pdf"
-          notes: "/notes/lecture-13"
+          slides: "/slides/lecture-14.pdf"
+          notes: "/notes/lecture-14"
 
     - week: 9
       sessions:
         - date: "2026-07-27"
           type: lecture
-          num: 14
-          title: "Building Backend Systems"
-          slides: "/slides/lecture-14.pdf"
-          notes: "/notes/lecture-14"
-
-        - date: "2026-07-29"
-          type: lecture
           num: 15
-          title: "Observability and Feedback"
+          title: "Building Backend Systems"
           slides: "/slides/lecture-15.pdf"
           notes: "/notes/lecture-15"
 
+        - date: "2026-07-29"
+          type: lecture
+          num: 16
+          title: "Observability and Feedback"
+          slides: "/slides/lecture-16.pdf"
+          notes: "/notes/lecture-16"
+
         - date: "2026-07-31"
           type: deadline
-          title: "Quiz 6"
+          title: "Quiz 5"
 
     - week: 10
       sessions:
@@ -228,8 +222,6 @@
           type: deadline
           title: "Assignment 3 Due"
 
-- section: "Part 7: Project"
-  weeks:
     - week: 11
       sessions:
         - date: "2026-08-10"

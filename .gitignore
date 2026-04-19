@@ -3,6 +3,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.qodo
 
 # Ruby
 Gemfile.lock
