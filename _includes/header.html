@@ -4,10 +4,10 @@
       <img src="https://www.qub.ac.uk/schools/media/Media926648smxx-400x400.png" alt="QUB" class="ribbon-logo">
       <span class="ribbon-title">{{ site.course_code }}: {{ site.course_name }}</span>
     </a>
-    <button class="hamburger" onclick="this.classList.toggle('is-active');this.nextElementSibling.classList.toggle('is-open')" aria-label="Menu">
+    <button class="hamburger" id="hamburger-btn" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-    <nav class="ribbon-nav">
+    <nav class="ribbon-nav" id="ribbon-nav">
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/schedule' | relative_url }}" {% if page.url contains 'schedule' %}class="active"{% endif %}>Schedule</a>
       <a href="{{ '/assignments' | relative_url }}" {% if page.url contains 'assignment' %}class="active"{% endif %}>Assignments</a>
@@ -17,3 +17,9 @@
     </nav>
   </div>
 </header>
+<script>
+document.getElementById('hamburger-btn').addEventListener('click', function() {
+  this.classList.toggle('is-active');
+  document.getElementById('ribbon-nav').classList.toggle('is-open');
+});
+</script>
