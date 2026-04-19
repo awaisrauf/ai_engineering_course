@@ -110,7 +110,7 @@
         - date: "2026-06-29"
           type: lecture
           num: 8
-          title: "When to Fine-tune, Memory Math"
+          title: "Why Fine-tune, Memory Math, Instruction Tuning"
           slides: "/slides/lecture-08.pdf"
           notes: "/notes/lecture-08"
           readings:
@@ -124,95 +124,81 @@
         - date: "2026-07-01"
           type: lecture
           num: 9
-          title: "Instruction Tuning and Distillation"
+          title: "Distillation, Parameter-Efficient Fine-Tuning"
           slides: "/slides/lecture-09.pdf"
           notes: "/notes/lecture-09"
+          readings:
+            - title: "Alpaca: A Strong, Replicable Instruction‑Following Model"
+              url: ""
+            - title: "LoRA: Low-Rank Adaptation"
+              url: "https://arxiv.org/abs/2106.09685"
 
     - week: 6
       sessions:
         - date: "2026-07-06"
           type: lecture
           num: 10
-          title: "Parameter-Efficient Fine-Tuning"
+          title: "Preference Optimisation, RLHF, Verifiable Rewards"
           slides: "/slides/lecture-10.pdf"
           notes: "/notes/lecture-10"
-          readings:
-            - title: "LoRA: Low-Rank Adaptation"
-              url: "https://arxiv.org/abs/2106.09685"
-
-        - date: "2026-07-08"
-          type: lecture
-          num: 11
-          title: "Preference Optimisation with Reinforcement Learning"
-          slides: "/slides/lecture-11.pdf"
-          notes: "/notes/lecture-11"
           readings:
             - title: "Direct Preference Optimization"
               url: "https://arxiv.org/abs/2305.18290"
 
-        - date: "2026-07-10"
+        - date: "2026-07-08"
           type: deadline
           title: "Quiz 4"
 
-    - week: 7
-      sessions:
-        - date: "2026-07-13"
-          type: lecture
-          num: 12
-          title: "Reinforcement Learning with Verifiable Rewards"
-          slides: "/slides/lecture-12.pdf"
-          notes: "/notes/lecture-12"
-
-        - date: "2026-07-15"
+        - date: "2026-07-10"
           type: deadline
           title: "Project Proposal Due"
 
-        - date: "2026-07-15"
+        - date: "2026-07-10"
           type: deadline
           title: "Assignment 2 Due"
 
 - section: "Part 3: Deploying Foundation Models"
   weeks:
+    - week: 7
+      sessions:
+        - date: "2026-07-13"
+          type: lecture
+          num: 11
+          title: "Inference Optimisation"
+          slides: "/slides/lecture-11.pdf"
+          notes: "/notes/lecture-11"
+          readings:
+            - title: "Efficient Memory Management for LLM Serving with PagedAttention"
+              url: "https://arxiv.org/abs/2309.06180"
+
+        - date: "2026-07-13"
+          type: deadline
+          title: "Assignment 3 Released"
+
+        - date: "2026-07-15"
+          type: lecture
+          num: 12
+          title: "Building Model APIs"
+          slides: "/slides/lecture-12.pdf"
+          notes: "/notes/lecture-12"
+
     - week: 8
       sessions:
         - date: "2026-07-20"
           type: lecture
           num: 13
-          title: "Inference Optimisation"
+          title: "Building Backend Systems"
           slides: "/slides/lecture-13.pdf"
           notes: "/notes/lecture-13"
-          readings:
-            - title: "Efficient Memory Management for LLM Serving with PagedAttention"
-              url: "https://arxiv.org/abs/2309.06180"
-
-        - date: "2026-07-20"
-          type: deadline
-          title: "Assignment 3 Released"
 
         - date: "2026-07-22"
           type: lecture
           num: 14
-          title: "Building Model APIs"
+          title: "Observability and Feedback"
           slides: "/slides/lecture-14.pdf"
           notes: "/notes/lecture-14"
 
-    - week: 9
-      sessions:
-        - date: "2026-07-27"
-          type: lecture
-          num: 15
-          title: "Building Backend Systems"
-          slides: "/slides/lecture-15.pdf"
-          notes: "/notes/lecture-15"
-
-        - date: "2026-07-29"
-          type: lecture
-          num: 16
-          title: "Observability and Feedback"
-          slides: "/slides/lecture-16.pdf"
-          notes: "/notes/lecture-16"
-
-        - date: "2026-07-31"
+        - date: "2026-07-24"
           type: deadline
           title: "Quiz 5"
 
