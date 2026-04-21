@@ -7,7 +7,7 @@
         - date: "2026-06-01"
           type: lecture
           num: 1
-          title: "Introduction - Foundation Models for Real-World Problems"
+          title: "Introduction, Foundational Models"
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
@@ -19,7 +19,7 @@
         - date: "2026-06-03"
           type: lecture
           num: 2
-          title: "Evaluation and Model Selection"
+          title: "Problem Framing, Evaluation, and Model Selection"
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
           readings:
@@ -35,7 +35,7 @@
         - date: "2026-06-08"
           type: lecture
           num: 3
-          title: "In-Context Learning"
+          title: "Prompting and In-Context Learning"
           slides: "/slides/lecture-03.pdf"
           notes: "/notes/lecture-03"
           readings:
@@ -82,6 +82,14 @@
 
     - week: 4
       sessions:
+        - date: "2026-06-26"
+          type: deadline
+          title: "Quiz 3"
+
+- section: "Part 2: Agentic AI"
+  weeks:
+    - week: 4
+      sessions:
         - date: "2026-06-22"
           type: lecture
           num: 6
@@ -99,11 +107,16 @@
           slides: "/slides/lecture-07.pdf"
           notes: "/notes/lecture-07"
 
-        - date: "2026-06-26"
-          type: deadline
-          title: "Quiz 3"
+    - week: 9
+      sessions:
+        - date: "2026-07-27"
+          type: lecture
+          num: 15
+          title: "Agentic AI"
+          slides: "/slides/lecture-15.pdf"
+          notes: "/notes/lecture-15"
 
-- section: "Part 2: Adapting Foundation Models"
+- section: "Part 3: Adapting Foundation Models"
   weeks:
     - week: 5
       sessions:
@@ -157,7 +170,7 @@
           type: deadline
           title: "Assignment 2 Due"
 
-- section: "Part 3: Deploying Foundation Models"
+- section: "Part 4: Deploying Foundation Models"
   weeks:
     - week: 7
       sessions:
