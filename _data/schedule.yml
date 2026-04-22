@@ -58,6 +58,10 @@
             - title: "Retrieval-Augmented Generation"
               url: "https://arxiv.org/abs/2005.11401"
 
+        - date: "2026-06-12"
+          type: event
+          title: "Guest Lecture - AMD"
+
     - week: 3
       sessions:
         - date: "2026-06-15"
