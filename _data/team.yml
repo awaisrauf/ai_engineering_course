@@ -4,7 +4,7 @@ instructors:
   - name: "Dr. Awais Rauf"
     role: "Module Coordinator"
     image: "assets/imgs/personal.jpg"
-    url: "awaisrauf.com"
+    url: "https://awaisrauf.com"
     office: "21 Stranmillis Road"
     office_hours: "Thursdays 14:00-16:00"
 
