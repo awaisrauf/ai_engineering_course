@@ -11,10 +11,12 @@
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
-            - title: "Attention Is All You Need"
+            - title: "📜 Attention Is All You Need"
               url: "https://arxiv.org/abs/1706.03762"
-            - title: "Improving Language Understanding by Generative Pre-Training"
+            - title: "📜 Improving Language Understanding by Generative Pre-Training"
               url: ""
+            - title: "🎥 Video by Andrej Karpathy: Deep Dive into LLMs like ChatGPT"
+              url: "https://www.youtube.com/watch?v=7xTGNNLPyMI"
 
         - date: "2026-06-03"
           type: lecture
@@ -25,6 +27,10 @@
           readings:
             - title: "Holistic Evaluation of Language Models"
               url: "https://arxiv.org/abs/2211.09110"
+            - title: "What We've Learned From A Year of Building with LLMs"
+              url: "https://applied-llms.org"
+            - title: "Your AI Product Needs Evals"
+              url: "https://hamel.dev/blog/posts/evals/"
 
         - date: "2026-06-05"
           type: deadline
