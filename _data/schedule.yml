@@ -31,6 +31,8 @@
               url: "https://applied-llms.org"
             - title: "Your AI Product Needs Evals"
               url: "https://hamel.dev/blog/posts/evals/"
+            - title: "Instruction-Following Evaluation for Large Language Models"
+              url: "https://arxiv.org/pdf/2311.07911"
 
         - date: "2026-06-05"
           type: deadline
@@ -45,7 +47,10 @@
           slides: "/slides/lecture-03.pdf"
           notes: "/notes/lecture-03"
           readings:
+            - title: "Language Models are Few-Shot Learners"
             - title: "Large language models are zero-shot reasoners"
+            - title: "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+            - title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
               url: ""
             - title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
               url: ""
