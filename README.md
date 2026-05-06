@@ -28,37 +28,6 @@ bundle exec jekyll serve
 3. Enable GitHub Pages in repository settings
 4. The site will be available at the configured URL
 
-## Structure
-
-```
-website/
-├── _config.yml          # Site configuration
-├── _data/               # Data files (schedule, team, sponsors)
-│   ├── schedule.yml     # Course schedule
-│   ├── team.yml         # Teaching team
-│   ├── sponsors.yml     # Industry sponsors
-│   └── deadlines.yml    # Key deadlines
-├── _includes/           # Reusable HTML components
-│   ├── header.html
-│   └── footer.html
-├── _layouts/            # Page layouts
-│   ├── default.html
-│   ├── page.html
-│   └── lecture.html
-├── assets/
-│   ├── css/style.css    # Main stylesheet
-│   ├── js/main.js       # JavaScript
-│   └── images/          # Images and logos
-├── notes/               # Lecture notes (Markdown)
-├── slides/              # Lecture slides (PDF)
-├── projects/            # Project resources
-├── index.html           # Homepage
-├── schedule.html        # Schedule page
-├── coursework.html      # Assessment info
-├── project.html         # Project guidelines
-├── resources.html       # Resources page
-└── team.html            # Team page
-```
 
 ## Customisation
 

@@ -4,7 +4,7 @@
   weeks:
     - week: 1
       sessions:
-        - date: "2026-06-01"
+        - date: "2026-06-03"
           type: lecture
           num: 1
           title: "Introduction, Foundational Models"
@@ -21,9 +21,18 @@
         - date: "2026-06-03"
           type: lecture
           num: 2
-          title: "Problem Framing, Evaluation, and Model Selection"
+          title: "How to Build Foundational Models"
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
+
+    - week: 2
+      sessions:
+        - date: "2026-06-10"
+          type: lecture
+          num: 3
+          title: "Problem Framing, Evaluation, and Model Selection"
+          slides: "/slides/lecture-03.pdf"
+          notes: "/notes/lecture-03"
           readings:
             - title: "Holistic Evaluation of Language Models"
               url: "https://arxiv.org/abs/2211.09110"
@@ -34,18 +43,12 @@
             - title: "Instruction-Following Evaluation for Large Language Models"
               url: "https://arxiv.org/pdf/2311.07911"
 
-        - date: "2026-06-05"
-          type: deadline
-          title: "Quiz 1"
-
-    - week: 2
-      sessions:
-        - date: "2026-06-08"
+        - date: "2026-06-10"
           type: lecture
-          num: 3
+          num: 4
           title: "Prompting and In-Context Learning"
-          slides: "/slides/lecture-03.pdf"
-          notes: "/notes/lecture-03"
+          slides: "/slides/lecture-04.pdf"
+          notes: "/notes/lecture-04"
           readings:
             - title: "Language Models are Few-Shot Learners"
             - title: "Large language models are zero-shot reasoners"
@@ -54,196 +57,159 @@
               url: ""
             - title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
               url: ""
-
-        - date: "2026-06-08"
-          type: deadline
-          title: "Assignment 1 Released"
-
-        - date: "2026-06-10"
-          type: lecture
-          num: 4
-          title: "Context Engineering - RAG, Memory, Tools"
-          slides: "/slides/lecture-04.pdf"
-          notes: "/notes/lecture-04"
-          readings:
-            - title: "Retrieval-Augmented Generation"
-              url: "https://arxiv.org/abs/2005.11401"
-
-        - date: "2026-06-12"
-          type: event
-          title: "Guest Lecture - AMD"
+            - title: "Lost in the Middle: How Language Models Use Long Contexts"
 
     - week: 3
       sessions:
-        - date: "2026-06-15"
+        - date: "2026-06-17"
           type: lecture
           num: 5
-          title: "Multimodal Foundation Models"
+          title: "Context Engineering - Contextual Retrieval"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
+          readings:
+            - title: "Retrieval-Augmented Generation"
+              url: "https://arxiv.org/abs/2005.11401"
+            - title: "Chapter 11 of Jurafsky and Martin's Book Speech and Language Processing"
+              url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
+
+        - date: "2026-06-17"
+          type: event
+          title: "Guest Lecture - Contextual Retrieval"
+
+    - week: 4
+      sessions:
+        - date: "2026-06-24"
+          type: lecture
+          num: 6
+          title: "Multimodal Foundation Models"
+          slides: "/slides/lecture-06.pdf"
+          notes: "/notes/lecture-06"
           readings:
             - title: "Learning Transferable Visual Models From Natural Language Supervision"
               url: "https://arxiv.org/abs/2103.00020"
             - title: "Whisper: Robust Speech Recognition"
               url: "https://arxiv.org/abs/2212.04356"
 
-        - date: "2026-06-17"
-          type: deadline
-          title: "Quiz 2"
-
-        - date: "2026-06-19"
-          type: deadline
-          title: "Assignment 1 Due"
-
-    - week: 4
-      sessions:
-        - date: "2026-06-26"
-          type: deadline
-          title: "Quiz 3"
+        - date: "2026-06-24"
+          type: event
+          title: "Guest Lecture - Multimodal Models"
 
 - section: "Part 2: Agentic AI"
   weeks:
-    - week: 4
+    - week: 5
       sessions:
-        - date: "2026-06-22"
-          type: lecture
-          num: 6
-          title: "Agentic AI"
-          slides: "/slides/lecture-06.pdf"
-          notes: "/notes/lecture-06"
-          readings:
-            - title: "ReAct: Reasoning and Acting in Language Models"
-              url: "https://arxiv.org/abs/2210.03629"
-
-        - date: "2026-06-24"
+        - date: "2026-07-01"
           type: lecture
           num: 7
           title: "Agentic AI"
           slides: "/slides/lecture-07.pdf"
           notes: "/notes/lecture-07"
+          readings:
+            - title: "ReAct: Reasoning and Acting in Language Models"
+              url: "https://arxiv.org/abs/2210.03629"
 
-    - week: 9
-      sessions:
-        - date: "2026-07-27"
+        - date: "2026-07-01"
           type: lecture
-          num: 15
+          num: 8
           title: "Agentic AI"
-          slides: "/slides/lecture-15.pdf"
-          notes: "/notes/lecture-15"
+          slides: "/slides/lecture-08.pdf"
+          notes: "/notes/lecture-08"
+
+    - week: 6
+      sessions:
+        - date: "2026-07-08"
+          type: lecture
+          num: 9
+          title: "Agentic AI"
+          slides: "/slides/lecture-09.pdf"
+          notes: "/notes/lecture-09"
+
+        - date: "2026-07-08"
+          type: lecture
+          num: 10
+          title: "Agentic AI"
+          slides: "/slides/lecture-10.pdf"
+          notes: "/notes/lecture-10"
 
 - section: "Part 3: Adapting Foundation Models"
   weeks:
-    - week: 5
+    - week: 7
       sessions:
-        - date: "2026-06-29"
+        - date: "2026-07-15"
           type: lecture
-          num: 8
+          num: 11
           title: "Why Fine-tune, Memory Math, Instruction Tuning"
-          slides: "/slides/lecture-08.pdf"
-          notes: "/notes/lecture-08"
+          slides: "/slides/lecture-11.pdf"
+          notes: "/notes/lecture-11"
           readings:
             - title: "Training language models to follow instructions"
               url: "https://arxiv.org/abs/2203.02155"
 
-        - date: "2026-06-29"
-          type: deadline
-          title: "Assignment 2 Released"
-
-        - date: "2026-07-01"
+        - date: "2026-07-15"
           type: lecture
-          num: 9
+          num: 12
           title: "Distillation, Parameter-Efficient Fine-Tuning"
-          slides: "/slides/lecture-09.pdf"
-          notes: "/notes/lecture-09"
+          slides: "/slides/lecture-12.pdf"
+          notes: "/notes/lecture-12"
           readings:
             - title: "Alpaca: A Strong, Replicable Instruction‑Following Model"
               url: ""
             - title: "LoRA: Low-Rank Adaptation"
               url: "https://arxiv.org/abs/2106.09685"
 
-    - week: 6
+    - week: 8
       sessions:
-        - date: "2026-07-06"
+        - date: "2026-07-22"
           type: lecture
-          num: 10
+          num: 13
           title: "Preference Optimisation, RLHF, Verifiable Rewards"
-          slides: "/slides/lecture-10.pdf"
-          notes: "/notes/lecture-10"
+          slides: "/slides/lecture-13.pdf"
+          notes: "/notes/lecture-13"
           readings:
             - title: "Direct Preference Optimization"
               url: "https://arxiv.org/abs/2305.18290"
 
-        - date: "2026-07-08"
-          type: deadline
-          title: "Quiz 4"
-
-        - date: "2026-07-10"
-          type: deadline
-          title: "Project Proposal Due"
-
-        - date: "2026-07-10"
-          type: deadline
-          title: "Assignment 2 Due"
+        - date: "2026-07-22"
+          type: lecture
+          num: 14
+          title: "Data Curation and Synthetic Data for Fine-tuning"
+          slides: "/slides/lecture-14.pdf"
+          notes: "/notes/lecture-14"
 
 - section: "Part 4: Deploying Foundation Models"
   weeks:
-    - week: 7
+    - week: 9
       sessions:
-        - date: "2026-07-13"
+        - date: "2026-07-29"
           type: lecture
-          num: 11
+          num: 15
           title: "Inference Optimisation"
-          slides: "/slides/lecture-11.pdf"
-          notes: "/notes/lecture-11"
+          slides: "/slides/lecture-15.pdf"
+          notes: "/notes/lecture-15"
           readings:
             - title: "Efficient Memory Management for LLM Serving with PagedAttention"
               url: "https://arxiv.org/abs/2309.06180"
 
-        - date: "2026-07-13"
-          type: deadline
-          title: "Assignment 3 Released"
-
-        - date: "2026-07-15"
+        - date: "2026-07-29"
           type: lecture
-          num: 12
+          num: 16
           title: "Building Model APIs"
-          slides: "/slides/lecture-12.pdf"
-          notes: "/notes/lecture-12"
-
-    - week: 8
-      sessions:
-        - date: "2026-07-20"
-          type: lecture
-          num: 13
-          title: "Building Backend Systems"
-          slides: "/slides/lecture-13.pdf"
-          notes: "/notes/lecture-13"
-
-        - date: "2026-07-22"
-          type: lecture
-          num: 14
-          title: "Observability and Feedback"
-          slides: "/slides/lecture-14.pdf"
-          notes: "/notes/lecture-14"
-
-        - date: "2026-07-24"
-          type: deadline
-          title: "Quiz 5"
+          slides: "/slides/lecture-16.pdf"
+          notes: "/notes/lecture-16"
 
     - week: 10
       sessions:
-        - date: "2026-08-03"
-          type: deadline
-          title: "Assignment 3 Due"
+        - date: "2026-08-05"
+          type: lecture
+          num: 17
+          title: "Building Backend Systems"
+          slides: "/slides/lecture-17.pdf"
+          notes: "/notes/lecture-17"
 
-    - week: 11
-      sessions:
-        - date: "2026-08-10"
-          type: event
-          title: "Project Office Hours"
-        - date: "2026-08-12"
-          type: deadline
-          title: "Project Report Due"
-        - date: "2026-08-14"
-          type: event
-          title: "Project Presentations"
+        - date: "2026-08-05"
+          type: lecture
+          num: 18
+          title: "Observability and Feedback"
+          slides: "/slides/lecture-18.pdf"
+          notes: "/notes/lecture-18"
