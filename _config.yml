@@ -1,7 +1,7 @@
 # Site settings
 title: "ECS8060: AI Engineering"
 description: "AI Engineering Course at Queen's University Belfast"
-baseurl: "/ai_engineering_course"
+baseurl: "/ecs8060"
 url: "https://awaisrauf.com"
 
 # Course info
