@@ -1,11 +1,14 @@
 ---
 layout: note
-title: "Lecture 5: RAG and External Data"
+title: "Lecture 5: Context Engineering - Contextual Retrieval"
 lecture: 5
-date: 2026-06-02
+date: 2026-06-17
 ---
 
-For a deeper look into embeddings: https://jalammar.github.io/illustrated-word2vec/
+## Readings
+
+1. [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401)
+2. [Chapter 11 of Jurafsky and Martin's Book Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/11.pdf)
 
 ## Optional Readings
 
@@ -24,4 +27,3 @@ For a deeper look into embeddings: https://jalammar.github.io/illustrated-word2v
 ### Long Context
 
 1. Recursive Language Models
-

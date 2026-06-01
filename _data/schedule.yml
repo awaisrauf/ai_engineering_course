@@ -11,12 +11,8 @@
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
-            - title: "📜 Attention Is All You Need"
+            - title: "Attention Is All You Need"
               url: "https://arxiv.org/abs/1706.03762"
-            - title: "📜 Improving Language Understanding by Generative Pre-Training"
-              url: ""
-            - title: "🎥 Video by Andrej Karpathy: Deep Dive into LLMs like ChatGPT"
-              url: "https://www.youtube.com/watch?v=7xTGNNLPyMI"
 
         - date: "2026-06-03"
           type: lecture
@@ -36,12 +32,6 @@
           readings:
             - title: "Holistic Evaluation of Language Models"
               url: "https://arxiv.org/abs/2211.09110"
-            - title: "What We've Learned From A Year of Building with LLMs"
-              url: "https://applied-llms.org"
-            - title: "Your AI Product Needs Evals"
-              url: "https://hamel.dev/blog/posts/evals/"
-            - title: "Instruction-Following Evaluation for Large Language Models"
-              url: "https://arxiv.org/pdf/2311.07911"
 
         - date: "2026-06-10"
           type: lecture
@@ -51,13 +41,6 @@
           notes: "/notes/lecture-04"
           readings:
             - title: "Language Models are Few-Shot Learners"
-            - title: "Large language models are zero-shot reasoners"
-            - title: "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
-            - title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
-              url: ""
-            - title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
-              url: ""
-            - title: "Lost in the Middle: How Language Models Use Long Contexts"
 
     - week: 3
       sessions:
@@ -70,54 +53,49 @@
           readings:
             - title: "Retrieval-Augmented Generation"
               url: "https://arxiv.org/abs/2005.11401"
-            - title: "Chapter 11 of Jurafsky and Martin's Book Speech and Language Processing"
-              url: "https://web.stanford.edu/~jurafsky/slp3/11.pdf"
 
         - date: "2026-06-17"
-          type: event
-          title: "Guest Lecture - Contextual Retrieval"
+          type: lecture
+          num: 6
+          title: "Advanced Topics in Retrieval"
+          slides: "/slides/lecture-06.pdf"
+          notes: "/notes/lecture-06"
 
     - week: 4
       sessions:
         - date: "2026-06-24"
           type: lecture
-          num: 6
+          num: 7
           title: "Multimodal Foundation Models"
-          slides: "/slides/lecture-06.pdf"
-          notes: "/notes/lecture-06"
+          slides: "/slides/lecture-07.pdf"
+          notes: "/notes/lecture-07"
           readings:
             - title: "Learning Transferable Visual Models From Natural Language Supervision"
               url: "https://arxiv.org/abs/2103.00020"
-            - title: "Whisper: Robust Speech Recognition"
-              url: "https://arxiv.org/abs/2212.04356"
 
         - date: "2026-06-24"
           type: event
-          title: "Guest Lecture - Multimodal Models"
+          title: "Guest Lecture - Multimodal by Dr. Hira"
+          notes: "/notes/guest-multimodal-dr-hira"
 
 - section: "Part 2: Agentic AI"
   weeks:
     - week: 5
       sessions:
         - date: "2026-07-01"
-          type: lecture
-          num: 7
-          title: "Agentic AI"
-          slides: "/slides/lecture-07.pdf"
-          notes: "/notes/lecture-07"
-          readings:
-            - title: "ReAct: Reasoning and Acting in Language Models"
-              url: "https://arxiv.org/abs/2210.03629"
+          type: event
+          title: "Agentic AI Seminar with AMD"
+          notes: "/notes/guest-agentic-ai-amd"
 
-        - date: "2026-07-01"
+    - week: 6
+      sessions:
+        - date: "2026-07-08"
           type: lecture
           num: 8
           title: "Agentic AI"
           slides: "/slides/lecture-08.pdf"
           notes: "/notes/lecture-08"
 
-    - week: 6
-      sessions:
         - date: "2026-07-08"
           type: lecture
           num: 9
@@ -125,36 +103,27 @@
           slides: "/slides/lecture-09.pdf"
           notes: "/notes/lecture-09"
 
-        - date: "2026-07-08"
-          type: lecture
-          num: 10
-          title: "Agentic AI"
-          slides: "/slides/lecture-10.pdf"
-          notes: "/notes/lecture-10"
-
 - section: "Part 3: Adapting Foundation Models"
   weeks:
     - week: 7
       sessions:
         - date: "2026-07-15"
           type: lecture
-          num: 11
+          num: 10
           title: "Why Fine-tune, Memory Math, Instruction Tuning"
-          slides: "/slides/lecture-11.pdf"
-          notes: "/notes/lecture-11"
+          slides: "/slides/lecture-10.pdf"
+          notes: "/notes/lecture-10"
           readings:
             - title: "Training language models to follow instructions"
               url: "https://arxiv.org/abs/2203.02155"
 
         - date: "2026-07-15"
           type: lecture
-          num: 12
+          num: 11
           title: "Distillation, Parameter-Efficient Fine-Tuning"
-          slides: "/slides/lecture-12.pdf"
-          notes: "/notes/lecture-12"
+          slides: "/slides/lecture-11.pdf"
+          notes: "/notes/lecture-11"
           readings:
-            - title: "Alpaca: A Strong, Replicable Instruction‑Following Model"
-              url: ""
             - title: "LoRA: Low-Rank Adaptation"
               url: "https://arxiv.org/abs/2106.09685"
 
@@ -162,20 +131,20 @@
       sessions:
         - date: "2026-07-22"
           type: lecture
-          num: 13
+          num: 12
           title: "Preference Optimisation, RLHF, Verifiable Rewards"
-          slides: "/slides/lecture-13.pdf"
-          notes: "/notes/lecture-13"
+          slides: "/slides/lecture-12.pdf"
+          notes: "/notes/lecture-12"
           readings:
             - title: "Direct Preference Optimization"
               url: "https://arxiv.org/abs/2305.18290"
 
         - date: "2026-07-22"
           type: lecture
-          num: 14
+          num: 13
           title: "Data Curation and Synthetic Data for Fine-tuning"
-          slides: "/slides/lecture-14.pdf"
-          notes: "/notes/lecture-14"
+          slides: "/slides/lecture-13.pdf"
+          notes: "/notes/lecture-13"
 
 - section: "Part 4: Deploying Foundation Models"
   weeks:
@@ -183,33 +152,40 @@
       sessions:
         - date: "2026-07-29"
           type: lecture
-          num: 15
+          num: 14
           title: "Inference Optimisation"
-          slides: "/slides/lecture-15.pdf"
-          notes: "/notes/lecture-15"
+          slides: "/slides/lecture-14.pdf"
+          notes: "/notes/lecture-14"
           readings:
             - title: "Efficient Memory Management for LLM Serving with PagedAttention"
               url: "https://arxiv.org/abs/2309.06180"
 
         - date: "2026-07-29"
           type: lecture
-          num: 16
+          num: 15
           title: "Building Model APIs"
-          slides: "/slides/lecture-16.pdf"
-          notes: "/notes/lecture-16"
+          slides: "/slides/lecture-15.pdf"
+          notes: "/notes/lecture-15"
 
     - week: 10
       sessions:
         - date: "2026-08-05"
           type: lecture
-          num: 17
+          num: 16
           title: "Building Backend Systems"
-          slides: "/slides/lecture-17.pdf"
-          notes: "/notes/lecture-17"
+          slides: "/slides/lecture-16.pdf"
+          notes: "/notes/lecture-16"
 
         - date: "2026-08-05"
           type: lecture
-          num: 18
+          num: 17
           title: "Observability and Feedback"
-          slides: "/slides/lecture-18.pdf"
-          notes: "/notes/lecture-18"
+          slides: "/slides/lecture-17.pdf"
+          notes: "/notes/lecture-17"
+
+    - week: 11
+      sessions:
+        - date: "2026-08-12"
+          type: event
+          title: "Guest Lecture - AI Safety by Dr. Ahmed"
+          notes: "/notes/guest-ai-safety-dr-ahmed"

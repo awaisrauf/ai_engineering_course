@@ -51,11 +51,11 @@ title: Schedule
         <td>{{ session.date | date: "%b %d" }}</td>
         <td class="topic-cell">
           {% if session.type == 'lecture' %}
-          <span class="lecture"><a href="{{ session.notes | default: '#' }}">Lecture {{ session.num }}: {{ session.title }}</a></span>
+          <span class="lecture"><a href="{{ session.notes | default: '#' | relative_url }}">Lecture {{ session.num }}: {{ session.title }}</a></span>
           {% if session.slides or session.notes %}
           <div class="materials">
-            {% if session.slides %}<a href="{{ session.slides }}">[slides]</a>{% endif %}
-            {% if session.notes %}<a href="{{ session.notes }}">[notes]</a>{% endif %}
+            {% if session.slides %}<a href="{{ session.slides | relative_url }}">[slides]</a>{% endif %}
+            {% if session.notes %}<a href="{{ session.notes | relative_url }}">[notes]</a>{% endif %}
           </div>
           {% endif %}
           {% if session.readings %}
@@ -75,7 +75,7 @@ title: Schedule
           {% elsif session.type == 'deadline' %}
           <span class="deadline">{{ session.title }}</span>
           {% elsif session.type == 'event' %}
-          <span class="event">{{ session.title }}</span>
+          <span class="event">{% if session.notes %}<a href="{{ session.notes | relative_url }}">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}</span>
           {% endif %}
         </td>
         <td class="readings">
