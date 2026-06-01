@@ -14,18 +14,18 @@ teaching_assistants:
     image: "assets/imgs/profile_placeholder.png"
     office_hours: "Mondays 10:00-12:00"
 
-  - name: "TA Name 2"
-    role: "PhD Researcher"
-    image: "assets/imgs/profile_placeholder.png"
-    office_hours: "Wednesdays 14:00-16:00"
-
 others:
-  - name: "Support 1"
+  - name: "Dr. Mario"
     role: "Guest Lecturer"
     image: "assets/imgs/profile_placeholder.png"
     url: "#"
 
-  - name: "Support 2"
+  - name: "Dr. Hira"
+    role: "Industry Partner"
+    image: "assets/imgs/profile_placeholder.png"
+    url: "#"
+
+  - name: "Dr. Ahmed"
     role: "Industry Partner"
     image: "assets/imgs/profile_placeholder.png"
     url: "#"
