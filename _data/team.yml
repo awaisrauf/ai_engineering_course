@@ -16,18 +16,18 @@ teaching_assistants:
 
 others:
   - name: "Dr. Mario"
-    role: "Guest Lecturer"
-    image: "assets/imgs/profile_placeholder.png"
+    role: "AMD"
+    image: "assets/imgs/mario.jpeg"
     url: "#"
 
   - name: "Dr. Hira"
-    role: "Industry Partner"
-    image: "assets/imgs/profile_placeholder.png"
+    role: "ML Engineer, Apple"
+    image: "assets/imgs/hira.jpeg"
     url: "#"
 
   - name: "Dr. Ahmed"
-    role: "Industry Partner"
-    image: "assets/imgs/profile_placeholder.png"
+    role: "Amazon AGI"
+    image: "assets/imgs/ahmed.jpeg"
     url: "#"
 
 sponsors:

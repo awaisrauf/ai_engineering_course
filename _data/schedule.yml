@@ -1,6 +1,6 @@
 # Course Schedule
 
-- section: "Part 1: Building with Foundation Models"
+- section: "Part 1: Building Intelligent Systems"
   weeks:
     - week: 1
       sessions:
@@ -78,8 +78,6 @@
           title: "Guest Lecture - Multimodal by Dr. Hira"
           notes: "/notes/guest-multimodal-dr-hira"
 
-- section: "Part 2: Agentic AI"
-  weeks:
     - week: 5
       sessions:
         - date: "2026-07-01"
@@ -103,7 +101,7 @@
           slides: "/slides/lecture-09.pdf"
           notes: "/notes/lecture-09"
 
-- section: "Part 3: Adapting Foundation Models"
+- section: "Part 2: Adapting and Deploying Models"
   weeks:
     - week: 7
       sessions:
@@ -146,8 +144,6 @@
           slides: "/slides/lecture-13.pdf"
           notes: "/notes/lecture-13"
 
-- section: "Part 4: Deploying Foundation Models"
-  weeks:
     - week: 9
       sessions:
         - date: "2026-07-29"
