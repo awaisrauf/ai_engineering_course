@@ -2,21 +2,21 @@
 
 instructors:
   - name: "Dr. Awais Rauf"
-    role: "Module Coordinator"
+    role: "Asst. Professor"
     image: "assets/imgs/personal.jpg"
     url: "https://awaisrauf.com"
     office: "21 Stranmillis Road"
     office_hours: "Thursdays 14:00-16:00"
 
 teaching_assistants:
-  - name: "TA Name 1"
+  - name: "Laith Al shehab"
     role: "PhD Researcher"
-    image: "assets/imgs/profile_placeholder.png"
+    image: "assets/imgs/laith.png"
     office_hours: "Mondays 10:00-12:00"
 
 others:
   - name: "Dr. Mario"
-    role: "AMD"
+    role: "Senior Member Technical Staff, AMD"
     image: "assets/imgs/mario.jpeg"
     url: "#"
 

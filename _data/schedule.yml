@@ -78,6 +78,11 @@
           title: "Guest Lecture - Multimodal by Dr. Hira"
           notes: "/notes/guest-multimodal-dr-hira"
 
+        - date: "2026-06-24"
+          type: deadline
+          title: "Project Proposal Submission"
+          notes: "/project"
+
     - week: 5
       sessions:
         - date: "2026-07-01"
@@ -101,11 +106,17 @@
           slides: "/slides/lecture-09.pdf"
           notes: "/notes/lecture-09"
 
-- section: "Part 2: Adapting and Deploying Models"
-  weeks:
     - week: 7
       sessions:
         - date: "2026-07-15"
+          type: selfstudy
+          title: "Self Study — No Lecture"
+
+- section: "Part 2: Adapting and Deploying Models"
+  weeks:
+    - week: 8
+      sessions:
+        - date: "2026-07-22"
           type: lecture
           num: 10
           title: "Why Fine-tune, Memory Math, Instruction Tuning"
@@ -115,7 +126,7 @@
             - title: "Training language models to follow instructions"
               url: "https://arxiv.org/abs/2203.02155"
 
-        - date: "2026-07-15"
+        - date: "2026-07-22"
           type: lecture
           num: 11
           title: "Distillation, Parameter-Efficient Fine-Tuning"
@@ -125,9 +136,14 @@
             - title: "LoRA: Low-Rank Adaptation"
               url: "https://arxiv.org/abs/2106.09685"
 
-    - week: 8
+        - date: "2026-07-23"
+          type: deadline
+          title: "Mid-Project Progress Submission"
+          notes: "/project"
+
+    - week: 9
       sessions:
-        - date: "2026-07-22"
+        - date: "2026-07-29"
           type: lecture
           num: 12
           title: "Preference Optimisation, RLHF, Verifiable Rewards"
@@ -137,16 +153,16 @@
             - title: "Direct Preference Optimization"
               url: "https://arxiv.org/abs/2305.18290"
 
-        - date: "2026-07-22"
+        - date: "2026-07-29"
           type: lecture
           num: 13
           title: "Data Curation and Synthetic Data for Fine-tuning"
           slides: "/slides/lecture-13.pdf"
           notes: "/notes/lecture-13"
 
-    - week: 9
+    - week: 10
       sessions:
-        - date: "2026-07-29"
+        - date: "2026-08-05"
           type: lecture
           num: 14
           title: "Inference Optimisation"
@@ -156,32 +172,37 @@
             - title: "Efficient Memory Management for LLM Serving with PagedAttention"
               url: "https://arxiv.org/abs/2309.06180"
 
-        - date: "2026-07-29"
+        - date: "2026-08-05"
           type: lecture
           num: 15
           title: "Building Model APIs"
           slides: "/slides/lecture-15.pdf"
           notes: "/notes/lecture-15"
 
-    - week: 10
+    - week: 11
       sessions:
-        - date: "2026-08-05"
+        - date: "2026-08-12"
           type: lecture
           num: 16
           title: "Building Backend Systems"
           slides: "/slides/lecture-16.pdf"
           notes: "/notes/lecture-16"
 
-        - date: "2026-08-05"
+        - date: "2026-08-12"
           type: lecture
           num: 17
           title: "Observability and Feedback"
           slides: "/slides/lecture-17.pdf"
           notes: "/notes/lecture-17"
 
-    - week: 11
+    - week: 12
       sessions:
-        - date: "2026-08-12"
+        - date: "2026-08-19"
           type: event
           title: "Guest Lecture - AI Safety by Dr. Ahmed"
           notes: "/notes/guest-ai-safety-dr-ahmed"
+
+        - date: "2026-08-25"
+          type: deadline
+          title: "Final Project Submission"
+          notes: "/project"

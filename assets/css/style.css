@@ -237,12 +237,6 @@ body {
   hyphens: auto;
   word-break: break-word;
 }
-.section p br {
-  content: "";
-  display: block;
-  margin: 1.2em 0;
-  /* Adjust this value as needed */
-}
 
 /* ============================================
    TEAM SECTION
@@ -463,6 +457,47 @@ tr:hover {
   text-decoration: underline;
 }
 
+/* Row highlights for deadlines, guest lectures, self-study */
+.schedule-table tr.row-deadline {
+  background: #fdf0f2;
+}
+
+.schedule-table tr.row-deadline:hover {
+  background: #fbe3e7;
+}
+
+.schedule-table tr.row-deadline .deadline a {
+  color: #8F0E20;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.schedule-table tr.row-deadline .deadline a:hover {
+  text-decoration: underline;
+}
+
+.schedule-table tr.row-event {
+  background: #eef4fb;
+}
+
+.schedule-table tr.row-event:hover {
+  background: #ddeaf7;
+}
+
+.schedule-table tr.row-selfstudy {
+  background: #f5f5f0;
+}
+
+.schedule-table tr.row-selfstudy:hover {
+  background: #eeeed8;
+}
+
+.schedule-table .selfstudy {
+  color: #888;
+  font-style: italic;
+  font-size: 16px;
+}
+
 /* Section header row */
 .schedule-section-row td {
   font-weight: 600;
@@ -652,6 +687,152 @@ tr:hover {
   border: none;
   border-top: 1px solid #ddd;
   margin: 24px 0;
+}
+
+/* ============================================
+   PROJECT TIMELINE
+   ============================================ */
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #8F0E20, #c0394f);
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.timeline-point {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.timeline-point:first-of-type {
+  align-items: flex-start;
+}
+
+.timeline-point:last-of-type {
+  align-items: flex-end;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #8F0E20;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(143,14,32,0.15);
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8F0E20;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.timeline-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-top: 3px solid #8F0E20;
+  border-radius: 6px;
+  padding: 16px 18px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.timeline-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.timeline-weight {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: #8F0E20;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.timeline-materials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-materials li {
+  font-size: 14px;
+  color: #444;
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0;
+}
+
+.timeline-materials li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0 10px 28px;
+  }
+
+  .timeline-line {
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    right: auto;
+    width: 4px;
+    height: 100%;
+  }
+
+  .timeline-point,
+  .timeline-point:first-of-type,
+  .timeline-point:last-of-type {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .timeline-date {
+    margin-bottom: 6px;
+  }
+
+  .timeline-card {
+    max-width: none;
+  }
 }
 
 /* ============================================

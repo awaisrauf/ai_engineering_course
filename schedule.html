@@ -9,9 +9,7 @@ title: Schedule
   <div class="section">
     <h2 class="section-title">Schedule</h2>
     <p>
-      This tentative schedule outlines all lectures, assignments, and deadlines across the three parts of the course:
-      building intelligent systems with foundation models, adapting foundational models with post-training methods, and deploying them as production systems.
-      Materials will be posted before each session on Canvas. The schedule is subject to change.
+      This tentative schedule outlines all lectures, labs, and deadlines for project submissions across the course. sMaterials will be posted before each session on Canvas. The schedule is subject to change.
     </p>
   </div>
 </div>
@@ -47,7 +45,7 @@ title: Schedule
       </tr>
       {% for week in part.weeks %}
       {% for session in week.sessions %}
-      <tr class="section-{{ section_num }}">
+      <tr class="section-{{ section_num }} row-{{ session.type }}">
         <td>{{ session.date | date: "%b %d" }}</td>
         <td class="topic-cell">
           {% if session.type == 'lecture' %}
@@ -73,9 +71,11 @@ title: Schedule
           {% endif %}
           {% endif %}
           {% elsif session.type == 'deadline' %}
-          <span class="deadline">{{ session.title }}</span>
+          <span class="deadline">{% if session.notes %}<a href="{{ session.notes | relative_url }}">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}</span>
           {% elsif session.type == 'event' %}
           <span class="event">{% if session.notes %}<a href="{{ session.notes | relative_url }}">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}</span>
+          {% elsif session.type == 'selfstudy' %}
+          <span class="selfstudy">{{ session.title }}</span>
           {% endif %}
         </td>
         <td class="readings">
