@@ -19,11 +19,11 @@ title: Schedule
     <h2 class="section-title">Books</h2>
     <p>
     The following books may be helpful resources for the course, but they are not required reading.
-     <sc>
-     <li>AI Engineering: Building Applications with Foundation Models by Chip Huyen. </li>
-     <li> Reinforcement Learning from Human FeedbackA short introduction to RLHF and post-training focused on language models by Nathan Lambert</li>
-    </sc>
     </p>
+    <ul>
+     <li><b>[AIE]</b> AI Engineering: Building Applications with Foundation Models — Chip Huyen</li>
+     <li><b>[RLHF]</b> Reinforcement Learning from Human Feedback: A Short Introduction to RLHF and Post-Training Focused on Language Models — Nathan Lambert</li>
+    </ul>
   </div>
 </div>
 
@@ -45,6 +45,7 @@ title: Schedule
       </tr>
       {% for week in part.weeks %}
       {% for session in week.sessions %}
+      {% if session.type == 'lab' %}{% continue %}{% endif %}
       <tr class="section-{{ section_num }} row-{{ session.type }}">
         <td>{{ session.date | date: "%b %d" }}</td>
         <td class="topic-cell">

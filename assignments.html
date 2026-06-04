@@ -17,56 +17,19 @@ title: Labs
         <th>Date</th>
         <th>Topic</th>
       </tr>
+      {% for part in site.data.schedule %}
+      {% for week in part.weeks %}
+      {% for session in week.sessions %}
+      {% if session.type == 'lab' %}
       <tr>
-        <td>Lab 1</td>
-        <td>June 3</td>
-        <td>Introduction & Foundational Models</td>
+        <td>Lab {{ session.num }}</td>
+        <td>{{ session.date | date: "%b %d" }}</td>
+        <td>{{ session.title }}</td>
       </tr>
-      <tr>
-        <td>Lab 2</td>
-        <td>June 10</td>
-        <td>Problem Framing, Evaluation & Prompting</td>
-      </tr>
-      <tr>
-        <td>Lab 3</td>
-        <td>June 17</td>
-        <td>Context Engineering & Retrieval</td>
-      </tr>
-      <tr>
-        <td>Lab 4</td>
-        <td>June 24</td>
-        <td>Multimodal Foundation Models</td>
-      </tr>
-      <tr>
-        <td>Lab 5</td>
-        <td>July 1</td>
-        <td>Agentic AI</td>
-      </tr>
-      <tr>
-        <td>Lab 6</td>
-        <td>July 8</td>
-        <td>Agentic AI (continued)</td>
-      </tr>
-      <tr>
-        <td>Lab 7</td>
-        <td>July 15</td>
-        <td>Fine-tuning & Parameter-Efficient Methods</td>
-      </tr>
-      <tr>
-        <td>Lab 8</td>
-        <td>July 22</td>
-        <td>Preference Optimisation & Data Curation</td>
-      </tr>
-      <tr>
-        <td>Lab 9</td>
-        <td>July 29</td>
-        <td>Inference Optimisation & Model APIs</td>
-      </tr>
-      <tr>
-        <td>Lab 10</td>
-        <td>August 5</td>
-        <td>Backend Systems & Observability</td>
-      </tr>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+      {% endfor %}
     </table>
   </div>
 

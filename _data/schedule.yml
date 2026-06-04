@@ -11,8 +11,7 @@
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
-            - title: "Attention Is All You Need"
-              url: "https://arxiv.org/abs/1706.03762"
+            - title: "AIE Ch. 1"
 
         - date: "2026-06-03"
           type: lecture
@@ -20,6 +19,13 @@
           title: "How to Build Foundational Models"
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
+          readings:
+            - title: "AIE Ch. 2"
+
+        - date: "2026-06-03"
+          type: lab
+          num: 1
+          title: "Introduction & Foundational Models"
 
     - week: 2
       sessions:
@@ -30,8 +36,7 @@
           slides: "/slides/lecture-03.pdf"
           notes: "/notes/lecture-03"
           readings:
-            - title: "Holistic Evaluation of Language Models"
-              url: "https://arxiv.org/abs/2211.09110"
+            - title: "AIE Ch. 3, 4"
 
         - date: "2026-06-10"
           type: lecture
@@ -40,7 +45,12 @@
           slides: "/slides/lecture-04.pdf"
           notes: "/notes/lecture-04"
           readings:
-            - title: "Language Models are Few-Shot Learners"
+            - title: "AIE Ch. 5"
+
+        - date: "2026-06-10"
+          type: lab
+          num: 2
+          title: "Problem Framing, Evaluation & Prompting"
 
     - week: 3
       sessions:
@@ -50,9 +60,6 @@
           title: "Context Engineering - Contextual Retrieval"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
-          readings:
-            - title: "Retrieval-Augmented Generation"
-              url: "https://arxiv.org/abs/2005.11401"
 
         - date: "2026-06-17"
           type: lecture
@@ -60,6 +67,11 @@
           title: "Advanced Topics in Retrieval"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
+
+        - date: "2026-06-17"
+          type: lab
+          num: 3
+          title: "Context Engineering & Retrieval"
 
     - week: 4
       sessions:
@@ -69,14 +81,16 @@
           title: "Multimodal Foundation Models"
           slides: "/slides/lecture-07.pdf"
           notes: "/notes/lecture-07"
-          readings:
-            - title: "Learning Transferable Visual Models From Natural Language Supervision"
-              url: "https://arxiv.org/abs/2103.00020"
 
         - date: "2026-06-24"
           type: event
           title: "Guest Lecture - Multimodal by Dr. Hira"
           notes: "/notes/guest-multimodal-dr-hira"
+
+        - date: "2026-06-24"
+          type: lab
+          num: 4
+          title: "Multimodal Foundation Models"
 
         - date: "2026-06-24"
           type: deadline
@@ -89,6 +103,11 @@
           type: event
           title: "Agentic AI Seminar with AMD"
           notes: "/notes/guest-agentic-ai-amd"
+
+        - date: "2026-07-01"
+          type: lab
+          num: 5
+          title: "Agentic AI"
 
     - week: 6
       sessions:
@@ -106,6 +125,11 @@
           slides: "/slides/lecture-09.pdf"
           notes: "/notes/lecture-09"
 
+        - date: "2026-07-08"
+          type: lab
+          num: 6
+          title: "Agentic AI (continued)"
+
     - week: 7
       sessions:
         - date: "2026-07-15"
@@ -122,9 +146,6 @@
           title: "Why Fine-tune, Memory Math, Instruction Tuning"
           slides: "/slides/lecture-10.pdf"
           notes: "/notes/lecture-10"
-          readings:
-            - title: "Training language models to follow instructions"
-              url: "https://arxiv.org/abs/2203.02155"
 
         - date: "2026-07-22"
           type: lecture
@@ -132,9 +153,11 @@
           title: "Distillation, Parameter-Efficient Fine-Tuning"
           slides: "/slides/lecture-11.pdf"
           notes: "/notes/lecture-11"
-          readings:
-            - title: "LoRA: Low-Rank Adaptation"
-              url: "https://arxiv.org/abs/2106.09685"
+
+        - date: "2026-07-22"
+          type: lab
+          num: 7
+          title: "Fine-tuning & Parameter-Efficient Methods"
 
         - date: "2026-07-23"
           type: deadline
@@ -149,9 +172,6 @@
           title: "Preference Optimisation, RLHF, Verifiable Rewards"
           slides: "/slides/lecture-12.pdf"
           notes: "/notes/lecture-12"
-          readings:
-            - title: "Direct Preference Optimization"
-              url: "https://arxiv.org/abs/2305.18290"
 
         - date: "2026-07-29"
           type: lecture
@@ -159,6 +179,11 @@
           title: "Data Curation and Synthetic Data for Fine-tuning"
           slides: "/slides/lecture-13.pdf"
           notes: "/notes/lecture-13"
+
+        - date: "2026-07-29"
+          type: lab
+          num: 8
+          title: "Preference Optimisation & Data Curation"
 
     - week: 10
       sessions:
@@ -168,9 +193,6 @@
           title: "Inference Optimisation"
           slides: "/slides/lecture-14.pdf"
           notes: "/notes/lecture-14"
-          readings:
-            - title: "Efficient Memory Management for LLM Serving with PagedAttention"
-              url: "https://arxiv.org/abs/2309.06180"
 
         - date: "2026-08-05"
           type: lecture
@@ -178,6 +200,11 @@
           title: "Building Model APIs"
           slides: "/slides/lecture-15.pdf"
           notes: "/notes/lecture-15"
+
+        - date: "2026-08-05"
+          type: lab
+          num: 9
+          title: "Inference Optimisation & Model APIs"
 
     - week: 11
       sessions:
@@ -194,6 +221,11 @@
           title: "Observability and Feedback"
           slides: "/slides/lecture-17.pdf"
           notes: "/notes/lecture-17"
+
+        - date: "2026-08-12"
+          type: lab
+          num: 10
+          title: "Backend Systems & Observability"
 
     - week: 12
       sessions:
