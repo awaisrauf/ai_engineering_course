@@ -62,6 +62,11 @@ date: 2026-06-24
   opacity: 0.95;
   line-height: 1.5;
   margin-bottom: 12px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: break-word;
 }
 
 .guest-hero .speaker-info .speaker-affiliations {
@@ -160,6 +165,10 @@ date: 2026-06-24
   font-size: 1.02rem;
   line-height: 1.8;
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: break-word;
 }
 
 /* Mobile responsive */
@@ -260,10 +269,10 @@ date: 2026-06-24
 When you speak, you reveal more than your words. The rhythm, tone, and texture of your voice encode psychological traits &mdash; your emotional state, your personality, even your behavioral tendencies.
 </p>
 <p>
-In this lecture, Dr. Dhamyal discusses building computational systems to decode two types of psychological traits from speech: <strong>emotion</strong> and <strong>personality</strong>. She introduces the use of <strong>CLAP</strong>, a contrastive audio-language model that uses natural-language descriptions of speech (rather than discrete category labels) to supervise emotion learning. This architecture allows the model to leverage the richness of natural language in addition to the speech signal. She then covers <strong>SELM</strong>, which extends this approach to address CLAP's limitations.
+In this talk, Dr. Dhamyal discusses building computational systems to decode two types of psychological traits from speech: <strong>emotion</strong> and <strong>personality</strong>. She introduces the use of <strong>CLAP</strong>, a contrastive audio-language model that uses natural-language descriptions of speech (rather than discrete category labels) to supervise emotion learning. This architecture allows the model to leverage the richness of natural language in addition to the speech signal. She then covers <strong>SELM</strong>, which extends this approach to address CLAP's limitations.
 </p>
 <p>
-For personality, she revisits the classical <strong>OCEAN model</strong> &mdash; a 60-year-old psychological framework for human personality &mdash; by re-analyzing its basis labels using modern LLM-derived word representations, revealing interesting patterns in the data as looked at through the lens of large language models.
+For personality, she revisits the classical <strong>OCEAN model</strong> &mdash; a 60-year-old psychological framework for human personality &mdash; by re-analyzing its basis labels using modern LLM-derived word representations, revealing interesting patterns in the data as looked at through the lens of large language models. She will also speak about her work utilizing contrastive audio-language models with acoustic prompts that achieve state-of-the-art zero-shot emotion recognition results.
 </p>
 <p>
 In the last part of the talk, Dr. Dhamyal will briefly discuss her work on <strong>Siri at Apple</strong> and explore the future of speech processing in the age of foundational models. She will also reflect on her journey as a Ph.D. student at Carnegie Mellon and research internships at Microsoft and Meta, offering valuable advice and perspectives for students interested in pursuing careers in research and industry.
