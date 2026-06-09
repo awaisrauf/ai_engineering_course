@@ -22,25 +22,25 @@ date: 2026-06-24
 }
 
 .guest-hero {
-  background: linear-gradient(135deg, #8F0E20 0%, #b91c3a 50%, #8F0E20 100%);
+  background: linear-gradient(135deg, #c4425a 0%, #d46074 50%, #c4425a 100%);
   border-radius: 14px;
-  padding: 28px 32px;
+  padding: 18px 24px;
   margin: 0 0 24px 0;
   color: white;
   display: flex;
-  gap: 28px;
+  gap: 22px;
   align-items: center;
-  width: 100%;
-  box-shadow: 0 8px 28px rgba(143, 14, 32, 0.25);
+  max-width: 100%;
+  box-shadow: 0 6px 20px rgba(143, 14, 32, 0.15);
 }
 
 .guest-hero .speaker-photo {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(255,255,255,0.85);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border: 3px solid rgba(255,255,255,0.9);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   flex-shrink: 0;
 }
 
@@ -50,7 +50,7 @@ date: 2026-06-24
 }
 
 .guest-hero .speaker-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0 0 6px 0;
   font-weight: 700;
   color: white;
@@ -58,25 +58,24 @@ date: 2026-06-24
 }
 
 .guest-hero .speaker-info .speaker-role {
-  font-size: 0.95rem;
-  opacity: 0.93;
-  margin-bottom: 12px;
+  font-size: 1.05rem;
+  opacity: 0.95;
   line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .guest-hero .speaker-info .speaker-affiliations {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
 }
 
 .guest-hero .speaker-info .speaker-affiliations span {
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.2);
   padding: 5px 14px;
   border-radius: 20px;
-  font-size: 0.85rem;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,0.25);
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
 .event-bar {
@@ -87,6 +86,7 @@ date: 2026-06-24
   font-size: 0.92rem;
   color: #444;
   align-items: center;
+  justify-content: center;
 }
 
 .event-bar .event-item {
@@ -106,20 +106,41 @@ date: 2026-06-24
   letter-spacing: 0.5px;
 }
 
-.event-bar .event-item.register-item {
-  background: #8F0E20;
-  border-color: #8F0E20;
+.register-block {
+  background: #faf5f6;
+  border: 1px solid #f0e0e3;
+  border-radius: 10px;
+  padding: 18px 24px;
+  margin: 16px 0 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.event-bar .event-item.register-item a {
-  color: white;
+.register-block p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.register-block a {
+  display: inline-block;
+  background: #8F0E20;
+  color: white !important;
+  padding: 10px 28px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(143, 14, 32, 0.25);
 }
 
-.event-bar .event-item.register-item a:hover {
-  opacity: 0.85;
+.register-block a:hover {
+  background: #a61228;
+  transform: translateY(-1px);
 }
 
 .section-block {
@@ -141,21 +162,62 @@ date: 2026-06-24
   text-align: justify;
 }
 
-.topic-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0;
-}
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .guest-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+    gap: 14px;
+  }
 
-.topic-tags span {
-  background: #faf5f6;
-  color: #8F0E20;
-  padding: 5px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border: 1px solid #f0e0e3;
+  .guest-hero .speaker-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .guest-hero .speaker-info {
+    min-width: unset;
+  }
+
+  .guest-hero .speaker-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .guest-hero .speaker-info .speaker-role {
+    font-size: 1rem;
+  }
+
+  .guest-hero .speaker-info .speaker-affiliations {
+    justify-content: center;
+  }
+
+  .event-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .event-bar .event-item {
+    justify-content: center;
+  }
+
+  .talk-title-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .section-block p {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .register-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guest-hero {
+    max-width: 100%;
+  }
 }
 </style>
 
@@ -168,7 +230,11 @@ date: 2026-06-24
   <div class="event-item"><strong>Time</strong> 2:00 &ndash; 3:00 PM</div>
   <div class="event-item"><strong>Venue</strong> PGT Lab, Level 2, CS Building, Belfast</div>
   <div class="event-item"><strong>Mode</strong> In-person + Online</div>
-  <div class="event-item register-item"><a href="https://forms.cloud.microsoft/e/kBPV0XB8R8" target="_blank">Register to Attend &rarr;</a></div>
+</div>
+
+<div class="register-block">
+  <p>If you want to attend in person or are not at Queen's, please register to attend.</p>
+  <a href="https://forms.cloud.microsoft/e/kBPV0XB8R8" target="_blank">Register to Attend &rarr;</a>
 </div>
 
 <div class="guest-hero">
@@ -202,16 +268,6 @@ For personality, she revisits the classical <strong>OCEAN model</strong> &mdash;
 <p>
 In the last part of the talk, Dr. Dhamyal will briefly discuss her work on <strong>Siri at Apple</strong> and explore the future of speech processing in the age of foundational models. She will also reflect on her journey as a Ph.D. student at Carnegie Mellon and research internships at Microsoft and Meta, offering valuable advice and perspectives for students interested in pursuing careers in research and industry.
 </p>
-
-<div class="topic-tags">
-  <span>Contrastive Learning</span>
-  <span>Audio-Language Models</span>
-  <span>Emotion Recognition</span>
-  <span>Personality Prediction</span>
-  <span>OCEAN Model</span>
-  <span>Speech Processing</span>
-  <span>LLMs</span>
-</div>
 </div>
 
 <div class="section-block">
