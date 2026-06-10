@@ -81,6 +81,24 @@ layout: talk
   border: 1px solid rgba(255,255,255,0.3);
 }
 
+.guest-hero .speaker-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.guest-hero .speaker-logos img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
 .event-bar {
   display: flex;
   flex-wrap: wrap;
@@ -174,13 +192,16 @@ layout: talk
   .guest-hero {
     flex-direction: column;
     text-align: center;
-    padding: 28px 20px;
-    gap: 14px;
+    padding: 24px 16px;
+    gap: 12px;
+    max-width: 100%;
+    border-radius: 12px;
   }
 
   .guest-hero .speaker-photo {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
+    border-width: 3px;
   }
 
   .guest-hero .speaker-info {
@@ -188,42 +209,77 @@ layout: talk
   }
 
   .guest-hero .speaker-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .guest-hero .speaker-info .speaker-role {
-    font-size: 1rem;
+    font-size: 0.92rem;
+    text-align: center;
+    line-height: 1.5;
   }
 
-  .guest-hero .speaker-info .speaker-affiliations {
+  .guest-hero .speaker-logos {
     justify-content: center;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .guest-hero .speaker-logos img {
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+  }
+
+  .talk-title-card {
+    padding: 12px 0;
+  }
+
+  .talk-title-card h1 {
+    font-size: 1.05rem;
+    line-height: 1.4;
   }
 
   .event-bar {
     flex-direction: column;
     align-items: stretch;
+    gap: 6px;
+    margin: 12px 0;
+    font-size: 0.85rem;
   }
 
   .event-bar .event-item {
     justify-content: center;
-  }
-
-  .talk-title-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .section-block p {
-    text-align: left;
-    font-size: 0.95rem;
+    padding: 6px 12px;
   }
 
   .register-block {
     flex-direction: column;
     text-align: center;
+    padding: 14px 16px;
+    gap: 10px;
   }
 
-  .guest-hero {
-    max-width: 100%;
+  .register-block p {
+    font-size: 0.88rem;
+  }
+
+  .register-block a {
+    padding: 8px 22px;
+    font-size: 0.88rem;
+  }
+
+  .section-block {
+    margin: 20px 0;
+  }
+
+  .section-block h3 {
+    font-size: 1.05rem;
+  }
+
+  .section-block p {
+    text-align: left;
+    font-size: 0.92rem;
+    line-height: 1.7;
   }
 }
 </style>
@@ -252,12 +308,10 @@ layout: talk
       Machine Learning Engineer, Siri Team @ Apple<br>
       Ph.D. in Language Technologies, Carnegie Mellon University
     </div>
-    <div class="speaker-affiliations">
-      <span>Apple</span>
-      <span>CMU</span>
-      <span>Speech & NLP</span>
-      <span>Speech Processing</span>
-    </div>
+  </div>
+  <div class="speaker-logos">
+    <img src="{{ '/assets/imgs/apple.png' | relative_url }}" alt="Apple">
+    <img src="{{ '/assets/imgs/cmu.png' | relative_url }}" alt="Carnegie Mellon University">
   </div>
 </div>
 
