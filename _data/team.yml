@@ -9,7 +9,7 @@ instructors:
     office_hours: "Thursdays 14:00-16:00"
 
 teaching_assistants:
-  - name: "Laith Al shehab"
+  - name: "Laith Al Shehab"
     role: "PhD Researcher"
     image: "assets/imgs/laith.png"
     office_hours: "Mondays 10:00-12:00"
@@ -23,7 +23,7 @@ others:
   - name: "Dr. Hira"
     role: "ML Engineer, Apple"
     image: "assets/imgs/hira.jpeg"
-    url: "#"
+    url: "https://awaisrauf.com/ecs8060/notes/guest-multimodal-dr-hira"
 
   - name: "Dr. Ahmed"
     role: "Amazon AGI"

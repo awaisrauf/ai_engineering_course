@@ -7,8 +7,8 @@ layout: talk
 
 <style>
 .talk-title-card {
-  padding: 18px 0;
-  margin: 20px 0 16px 0;
+  padding: 10px 0;
+  margin: 8px 0 10px 0;
   text-align: center;
 }
 
@@ -366,7 +366,3 @@ She has publications in top conferences including <strong>ICASSP</strong>, <stro
 </p>
 </div>
 
-<div class="section-block">
-<h3>Readings</h3>
-<p>TBC</p>
-</div>
