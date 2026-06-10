@@ -1,20 +1,18 @@
 ---
-layout: note
-title: "Guest Lecture - Multimodal AI by Dr. Hira Dhamyal"
-lecture: "Guest"
-date: 2026-06-24
+layout: talk
+# title: "Guest Lecture - Multimodal AI by Dr. Hira Dhamyal"
+# lecture: "Guest"
+# date: 2026-06-24
 ---
 
 <style>
 .talk-title-card {
-  background: #faf5f6;
-  border-left: 5px solid #8F0E20;
-  padding: 18px 24px;
-  border-radius: 0 10px 10px 0;
+  padding: 18px 0;
   margin: 20px 0 16px 0;
+  text-align: center;
 }
 
-.talk-title-card h3 {
+.talk-title-card h1 {
   color: #8F0E20;
   font-size: 1.3rem;
   margin: 0;
@@ -231,7 +229,7 @@ date: 2026-06-24
 </style>
 
 <div class="talk-title-card">
-  <h3>Multimodal AI for Human Understanding &mdash; Decoding Emotion and Personality from Speech</h3>
+  <h1>Invited Talk: Multimodal AI for Human Understanding &mdash; Decoding Emotion and Personality from Speech</h1>
 </div>
 
 <div class="event-bar">
