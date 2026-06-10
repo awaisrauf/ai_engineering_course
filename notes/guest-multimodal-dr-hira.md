@@ -14,13 +14,25 @@ layout: talk
 
 .talk-title-card h1 {
   color: #8F0E20;
-  font-size: 1.3rem;
-  margin: 0;
+  font-size: 2.1rem;
+  margin: 0 0 8px 0;
   border: none;
 }
 
+.talk-title-card .talk-type {
+  color: #8F0E20;
+  font-weight: 300;
+}
+
+.talk-title-card .talk-subtitle {
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
 .guest-hero {
-  background: linear-gradient(135deg, #c4425a 0%, #d46074 50%, #c4425a 100%);
+  background: linear-gradient(135deg, #8F0E20 0%, #a61228 50%, #8F0E20 100%);
   border-radius: 14px;
   padding: 18px 24px;
   margin: 0 0 24px 0;
@@ -48,7 +60,7 @@ layout: talk
 }
 
 .guest-hero .speaker-info h2 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   margin: 0 0 6px 0;
   font-weight: 700;
   color: white;
@@ -56,7 +68,7 @@ layout: talk
 }
 
 .guest-hero .speaker-info .speaker-role {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   opacity: 0.95;
   line-height: 1.5;
   margin-bottom: 12px;
@@ -99,62 +111,65 @@ layout: talk
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-.event-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 16px 0;
-  font-size: 0.92rem;
-  color: #444;
-  align-items: center;
-  justify-content: center;
-}
-
-.event-bar .event-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.event-card {
   background: #faf5f6;
-  padding: 7px 16px;
-  border-radius: 8px;
   border: 1px solid #f0e0e3;
+  border-radius: 12px 12px 0 0;
+  padding: 14px 24px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  font-size: 1.05rem;
+  color: #333;
 }
 
-.event-bar .event-item strong {
+.event-card .event-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-card .event-label {
+  font-weight: 600;
   color: #8F0E20;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+}
+
+.event-card .event-sep {
+  color: #ccc;
+  margin: 0 4px;
 }
 
 .register-block {
   background: #faf5f6;
   border: 1px solid #f0e0e3;
-  border-radius: 10px;
-  padding: 18px 24px;
-  margin: 16px 0 24px 0;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 8px 24px;
+  margin: 0 0 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 }
 
 .register-block p {
   margin: 0;
   color: #555;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .register-block a {
   display: inline-block;
   background: #8F0E20;
   color: white !important;
-  padding: 10px 28px;
+  padding: 7px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   transition: all 0.2s;
   box-shadow: 0 3px 10px rgba(143, 14, 32, 0.25);
 }
@@ -209,11 +224,11 @@ layout: talk
   }
 
   .guest-hero .speaker-info h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .guest-hero .speaker-info .speaker-role {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
     text-align: center;
     line-height: 1.5;
   }
@@ -235,37 +250,41 @@ layout: talk
   }
 
   .talk-title-card h1 {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  .event-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 6px;
-    margin: 12px 0;
-    font-size: 0.85rem;
+  .talk-title-card .talk-subtitle {
+    font-size: 1.05rem;
   }
 
-  .event-bar .event-item {
-    justify-content: center;
-    padding: 6px 12px;
+  .event-card {
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 16px;
+    margin: 0;
+    font-size: 0.88rem;
+    align-items: flex-start;
+  }
+
+  .event-card .event-sep {
+    display: none;
   }
 
   .register-block {
     flex-direction: column;
     text-align: center;
-    padding: 14px 16px;
-    gap: 10px;
+    padding: 8px 16px;
+    gap: 6px;
   }
 
   .register-block p {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
   }
 
   .register-block a {
-    padding: 8px 22px;
-    font-size: 0.88rem;
+    padding: 6px 18px;
+    font-size: 0.82rem;
   }
 
   .section-block {
@@ -285,16 +304,19 @@ layout: talk
 </style>
 
 <div class="talk-title-card">
-  <h1>Invited Talk: Multimodal AI for Human Understanding &mdash; Decoding Emotion and Personality from Speech</h1>
+  <h1><span class="talk-type">Guest Lecture:</span> Multimodal AI for Human Understanding</h1>
+  <p class="talk-subtitle">Decoding Emotion and Personality from Speech</p>
 </div>
 
-<div class="event-bar">
-  <div class="event-item"><strong>Date</strong> 24 June 2026</div>
-  <div class="event-item"><strong>Time</strong> 2:00 &ndash; 3:00 PM</div>
-  <div class="event-item"><strong>Venue</strong> PGT Lab, Level 2, CS Building, Belfast</div>
-  <div class="event-item"><strong>Mode</strong> In-person + Online</div>
+<div class="event-card">
+  <span class="event-item"><span class="event-label">Date:</span> 24 June</span>
+  <span class="event-sep">|</span>
+  <span class="event-item"><span class="event-label">Time:</span> 2:00 &ndash; 3:00 PM</span>
+  <span class="event-sep">|</span>
+  <span class="event-item"><span class="event-label">Venue:</span> PGT Lab, Level 2, CS Building, Belfast</span>
+  <span class="event-sep">|</span>
+  <span class="event-item"><span class="event-label">Mode:</span> In-person + Online</span>
 </div>
-
 <div class="register-block">
   <p>If you want to attend in person or are not at Queen's, please register to attend.</p>
   <a href="https://forms.cloud.microsoft/e/kBPV0XB8R8" target="_blank">Register to Attend &rarr;</a>
