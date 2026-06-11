@@ -17,8 +17,8 @@ teaching_assistants:
 others:
   - name: "Dr. Mario"
     role: "Senior Member Technical Staff, AMD"
-    image: "assets/imgs/mario.jpeg"
-    url: "#"
+    image: "assets/imgs/mario.jpg"
+    url: "https://awaisrauf.com/ecs8060/notes/guest-agentic-ai-amd"
 
   - name: "Dr. Hira"
     role: "ML Engineer, Apple"
@@ -28,7 +28,7 @@ others:
   - name: "Dr. Ahmed"
     role: "Amazon AGI"
     image: "assets/imgs/ahmed.jpeg"
-    url: "#"
+    url: "https://awaisrauf.com/ecs8060/notes/guest-ai-safety-dr-ahmed"
 
 sponsors:
   - name: "AMD"

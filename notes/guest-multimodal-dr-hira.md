@@ -202,6 +202,57 @@ layout: talk
   word-break: break-word;
 }
 
+/* Tablet responsive */
+@media (max-width: 900px) and (min-width: 601px) {
+  .talk-title-card h1 {
+    font-size: 1.7rem;
+  }
+
+  .talk-title-card .talk-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .guest-hero {
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .guest-hero .speaker-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .guest-hero .speaker-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .guest-hero .speaker-info .speaker-role {
+    font-size: 1.05rem;
+    text-align: left;
+  }
+
+  .guest-hero .speaker-logos img {
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+  }
+
+  .event-card {
+    font-size: 0.82rem;
+    gap: 6px;
+    padding: 12px 20px;
+    flex-wrap: nowrap;
+  }
+
+  .register-block p {
+    font-size: 0.95rem;
+  }
+
+  .register-block a {
+    font-size: 0.95rem;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 600px) {
   .guest-hero {
