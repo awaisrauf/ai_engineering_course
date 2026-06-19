@@ -393,7 +393,7 @@ layout: talk
 Building trustworthy and capable agentic AI systems requires a foundation of open innovation, scalable compute, and transparent design principles. In this workshop, we explore how open-source initiatives &mdash; with AMD as a key driver &mdash; are accelerating the development of autonomous AI agents. We will highlight how AMD's latest Agent Computers, with integrated GPUs, provide optimized on-device compute for real-time inferencing and agentic workloads.
 </p>
 <p>
-In the workshop, we will explore how we got from token generation to AI Agents. We will refresh the basics of context engineering and RAG systems. Then we will dive deeper into AI Agents and their fundamental components (model, orchestration and tools). Using the AUP Learning Cloud you will run hands-on labs to cement these concepts.
+We will also explore how we got from token generation to AI Agents. We will refresh the basics of context engineering and RAG systems. Then we will dive deeper into AI Agents and their fundamental components (model, orchestration and tools). Using the AUP Learning Cloud you will run hands-on labs to cement these concepts.
 </p>
 </div>
 
@@ -401,24 +401,12 @@ In the workshop, we will explore how we got from token generation to AI Agents. 
 <h3>What You'll Learn</h3>
 <ul>
   <li>How token generation evolved into autonomous AI agents</li>
-  <li>Context engineering and RAG system fundamentals</li>
   <li>Core components of AI agents: model, orchestration, and tools</li>
   <li>Hands-on experience building agents on the AUP Learning Cloud</li>
   <li>How AMD's Agent Computers enable on-device agentic workloads</li>
 </ul>
 </div>
 
-<div class="section-block">
-<h3>AMD Hardware</h3>
-<p>
-This seminar is powered by AMD's latest hardware provided to Queen's University Belfast. Participants will have access to:
-</p>
-<ul>
-  <li><strong>AMD Agent Computers</strong> &mdash; Purpose-built PCs with integrated GPUs optimized for on-device AI inferencing and agentic workloads</li>
-  <li><strong>AMD Ryzen AI Processors</strong> &mdash; Featuring dedicated NPUs for efficient local AI processing</li>
-  <li><strong>AUP Learning Cloud</strong> &mdash; AMD University Program's cloud platform for hands-on labs and experimentation</li>
-</ul>
-</div>
 
 <div class="section-block">
 <h3>About the Speaker</h3>

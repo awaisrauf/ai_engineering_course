@@ -20,7 +20,7 @@ others:
     image: "assets/imgs/mario.jpg"
     url: "https://awaisrauf.com/ecs8060/notes/guest-agentic-ai-amd"
 
-  - name: "Dr. Hira"
+  - name: "Dr. Hira Dhamyal"
     role: "ML Engineer, Apple"
     image: "assets/imgs/hira.jpeg"
     url: "https://awaisrauf.com/ecs8060/notes/guest-multimodal-dr-hira"

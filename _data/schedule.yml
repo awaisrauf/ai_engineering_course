@@ -11,7 +11,7 @@
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
-            - title: "AIE Ch. 1"
+            - title: "AIE Chapter 1"
 
         - date: "2026-06-03"
           type: lecture
@@ -20,7 +20,7 @@
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
           readings:
-            - title: "AIE Ch. 2"
+            - title: "AIE Chapter 2"
 
         - date: "2026-06-03"
           type: lab
@@ -36,7 +36,7 @@
           slides: "/slides/lecture-03.pdf"
           notes: "/notes/lecture-03"
           readings:
-            - title: "AIE Ch. 3, 4"
+            - title: "AIE Chapter 3, 4"
 
         - date: "2026-06-10"
           type: lecture
@@ -45,7 +45,7 @@
           slides: "/slides/lecture-04.pdf"
           notes: "/notes/lecture-04"
           readings:
-            - title: "AIE Ch. 5"
+            - title: "AIE Chapter 5"
 
         - date: "2026-06-10"
           type: lab
@@ -60,11 +60,13 @@
           title: "Context Engineering - Contextual Retrieval"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
+          readings:
+            - title: "SLP Chapter 11, AIE Ch. 6"
 
         - date: "2026-06-17"
           type: lecture
           num: 6
-          title: "Advanced Topics in Retrieval"
+          title: "Beyond Vanilla RAG"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
 
