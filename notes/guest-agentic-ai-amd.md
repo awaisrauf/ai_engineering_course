@@ -362,7 +362,7 @@ layout: talk
 <div class="event-card">
   <span class="event-item"><span class="event-label">Date:</span> 1 July</span>
   <span class="event-sep">|</span>
-  <span class="event-item"><span class="event-label">Time:</span> TBC</span>
+  <span class="event-item"><span class="event-label">Time:</span> 10 AM - 12 AM</span>
   <span class="event-sep">|</span>
   <span class="event-item"><span class="event-label">Venue:</span> PGT Lab, Level 2, CS Building, Belfast</span>
   <span class="event-sep">|</span>
@@ -370,7 +370,7 @@ layout: talk
 </div>
 <div class="register-block">
   <p>If you are not enrolled in the module, please register to attend the seminar.</p>
-  <a href="#" target="_blank">Register for Seminar &rarr;</a>
+  <a href="https://forms.cloud.microsoft/e/v1jBynRdg8" target="_blank">Register for Seminar &rarr;</a>
 </div>
 
 <div class="guest-hero">
