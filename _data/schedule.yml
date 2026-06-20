@@ -57,7 +57,7 @@
         - date: "2026-06-17"
           type: lecture
           num: 5
-          title: "Context Engineering - Contextual Retrieval"
+          title: "Retrieval-Augmented Generation"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
           readings:
@@ -66,14 +66,14 @@
         - date: "2026-06-17"
           type: lecture
           num: 6
-          title: "Beyond Vanilla RAG"
+          title: "Retrieval Beyond Vanilla RAG"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
 
         - date: "2026-06-17"
           type: lab
           num: 3
-          title: "Context Engineering & Retrieval"
+          title: "Retrieval-Augmented Generation"
 
     - week: 4
       sessions:
