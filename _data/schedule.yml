@@ -69,6 +69,8 @@
           title: "Retrieval Beyond Vanilla RAG"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
+          readings:
+            - title: "AIE Ch. 6"
 
         - date: "2026-06-17"
           type: lab
