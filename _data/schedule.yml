@@ -159,7 +159,7 @@
         - date: "2026-07-22"
           type: lab
           num: 7
-          title: "Fine-tuning & Parameter-Efficient Methods"
+          title: "Memory Math, Fine-tuning & Parameter-Efficient Methods"
 
         - date: "2026-07-23"
           type: deadline
@@ -171,14 +171,14 @@
         - date: "2026-07-29"
           type: lecture
           num: 12
-          title: "Preference Optimisation, RLHF, Verifiable Rewards"
+          title: "Reinforcement Learning with Human Feedback (RLHF)"
           slides: "/slides/lecture-12.pdf"
           notes: "/notes/lecture-12"
 
         - date: "2026-07-29"
           type: lecture
           num: 13
-          title: "Data Curation and Synthetic Data for Fine-tuning"
+          title: "Data Curation for Fine-tuning"
           slides: "/slides/lecture-13.pdf"
           notes: "/notes/lecture-13"
 
