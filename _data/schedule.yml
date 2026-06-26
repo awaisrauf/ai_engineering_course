@@ -7,7 +7,7 @@
         - date: "2026-06-03"
           type: lecture
           num: 1
-          title: "Introduction, Foundational Models"
+          title: "Introduction to the Course"
           slides: "/slides/lecture-01.pdf"
           notes: "/notes/lecture-01"
           readings:
@@ -16,7 +16,7 @@
         - date: "2026-06-03"
           type: lecture
           num: 2
-          title: "How to Build Foundational Models"
+          title: "Understanding How Foundation Models Are Built"
           slides: "/slides/lecture-02.pdf"
           notes: "/notes/lecture-02"
           readings:
@@ -57,7 +57,7 @@
         - date: "2026-06-17"
           type: lecture
           num: 5
-          title: "Retrieval-Augmented Generation"
+          title: "Retrieval-Augmented Generation -- RAG"
           slides: "/slides/lecture-05.pdf"
           notes: "/notes/lecture-05"
           readings:
@@ -66,7 +66,7 @@
         - date: "2026-06-17"
           type: lecture
           num: 6
-          title: "Retrieval Beyond Vanilla RAG"
+          title: "Knowledge Retrieval Beyond RAG"
           slides: "/slides/lecture-06.pdf"
           notes: "/notes/lecture-06"
           readings:
@@ -82,7 +82,7 @@
         - date: "2026-06-24"
           type: lecture
           num: 7
-          title: "Multimodal Foundation Models"
+          title: "Introduction to Multimodal Foundation Models"
           slides: "/slides/lecture-07.pdf"
           notes: "/notes/lecture-07"
 
@@ -111,7 +111,7 @@
         - date: "2026-07-01"
           type: lab
           num: 5
-          title: "Agentic AI"
+          title: "Hands on Exercises oon Agentic AI with AMD Technology"
 
     - week: 6
       sessions:
@@ -132,7 +132,7 @@
         - date: "2026-07-08"
           type: lab
           num: 6
-          title: "Agentic AI (continued)"
+          title: "No Lab"
 
     - week: 7
       sessions:
@@ -140,7 +140,7 @@
           type: selfstudy
           title: "Self Study — No Lecture"
 
-- section: "Part 2: Adapting and Deploying Models"
+- section: "Part 2: Adapting and Deploying Foundational Models"
   weeks:
     - week: 8
       sessions:
@@ -154,14 +154,14 @@
         - date: "2026-07-22"
           type: lecture
           num: 11
-          title: "Distillation, Parameter-Efficient Fine-Tuning"
+          title: "Parameter-Efficient Fine-Tuning, Distillation"
           slides: "/slides/lecture-11.pdf"
           notes: "/notes/lecture-11"
 
         - date: "2026-07-22"
           type: lab
           num: 7
-          title: "Memory Math, Fine-tuning & Parameter-Efficient Methods"
+          title: "Memory Math, Fine-tuning & Parameter-Efficient Finetuning"
 
         - date: "2026-07-23"
           type: deadline
@@ -187,7 +187,7 @@
         - date: "2026-07-29"
           type: lab
           num: 8
-          title: "Preference Optimisation & Data Curation"
+          title: "Reinforcement Learning for LLMs"
 
     - week: 10
       sessions:

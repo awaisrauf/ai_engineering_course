@@ -20,7 +20,7 @@ others:
     image: "assets/imgs/mario.jpg"
     url: "https://awaisrauf.com/ecs8060/notes/guest-agentic-ai-amd"
 
-  - name: "Dr. Hira Dhamyal"
+  - name: "Dr. Hira"
     role: "ML Engineer, Apple"
     image: "assets/imgs/hira.jpeg"
     url: "https://awaisrauf.com/ecs8060/notes/guest-multimodal-dr-hira"
@@ -35,6 +35,6 @@ sponsors:
     logo: "assets/imgs/amd.png"
     url: "#"
 
-  - name: "NI Screen1"
+  - name: "NI Screen"
     logo: "https://northernirelandscreen.co.uk/wp-content/themes/NI-Screen/images/logos/logo.svg"
     url: "#"
