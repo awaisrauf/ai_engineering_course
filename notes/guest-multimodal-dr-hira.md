@@ -183,6 +183,24 @@ layout: talk
   margin: 28px 0;
 }
 
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .section-block h3 {
   color: #8F0E20;
   font-size: 1.2rem;
@@ -386,6 +404,13 @@ layout: talk
     <img src="{{ '/assets/imgs/apple.png' | relative_url }}" alt="Apple">
     <img src="{{ '/assets/imgs/cmu.png' | relative_url }}" alt="Carnegie Mellon University">
   </div>
+</div>
+
+<div class="section-block">
+<h3>Recording</h3>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/jtX2etUp1o0" title="Guest Lecture -- ECS8060 -- Multimodal AI for Human Understanding -- Dr. Hira Dhamyal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </div>
 
 <div class="section-block">
